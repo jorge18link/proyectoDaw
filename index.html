@@ -16,6 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,7 +25,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+       .tab-content{
+        text-align: justify;
 
+       } 
+    </style>
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -95,33 +102,36 @@
     </section>
 
     <!-- About Section -->
-    <section id="curso" class="about-section" style="background-color: lightblue">
+    <section id="curso" class="about-section" style="background-color: lightblue">  
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            </div class="row">
                     <h1>Curso</h1>
-                    <div class="col-lg-3">
-                        <div class="wrapper">
-                            <ul class="nav nav-pills nav-stacked" id="myTab">
-                              <li class="active"><a href="#descripcion">Descripción</a></li>
-                              <li><a href="#requisitos">Requisitos</a></li>
-                              <li><a href="#syllabus">Syllabus</a></li>
-                              <li><a href="#politicas">Politicas</a></li>
+                    <div class="col-lg-3" >
+                            <ul class="nav nav-pills nav-stacked">
+                              <li class="active"><a data-toggle="pill" href="#descripcion">Descripción</a></li>
+                              <li><a data-toggle="pill" href="#Prerrequisitos">Prerrequisitos</a></li>
+                              <li><a data-toggle="pill" href="#syllabus">Syllabus</a></li>
+                              <li><a data-toggle="pill" href="#politicas">Politicas</a></li>
                             </ul>
-                        </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="pActivoCurso">
-                            <p> Aqui va el contenido</p>
-                            <p> Este sera el "panel" Activo en donde se mostrara la informacion de cada tab</p>
-                            <hr>
-                            <p> Podria usar Scrooling horizontal</p>
-                            <p> O tambien podria usar el mismo formato de la pagina entera bajando entre cada section</p>
-                            <p> Habria que darle un borde bien definido para que no se confunda</p>
-                            <img src="wip.png">
+                        <div class="tab-content">
+                            <div id="descripcion" class=" text-muted tab-pane fade in active">
+                                Este curso presenta estrategias para resolver problemas básicos de ingeniería mediante la aplicación de un lenguaje de programación estructurado, a través de la aplicación de buenas prácticas de programación con ejercicios que ayudan a desarrollar el pensamiento lógico. Se estudia el paradigma “dividir y conquistar” para dividir problemas grandes en módulos o procedimientos, utilizando adecuadamente las variables simples, funciones, arreglos, iteraciones, recursión, el procesamiento básico de archivos y estructuras de datos sencillas.
+
+                                En este curso los estudiantes realizarán trabajos en grupo para resolver diversos problemas de ingeniería en un lenguaje de alto nivel a través de una herramienta de programación.                            
+                            </div>
+                            <div id="Prerrequisitos" class="tab-pane fade text-muted">
+                                PRERREQUISITO: Herramientas de Colaboración Digital (FIEC06460)     
+                            </div>
+                            <div id="syllabus" class="tab-pane fade text-muted">
+                                ede
+                            </div>
+                            <div id="politicas" class="tab-pane fade text-muted">
+                                ded
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </section>
