@@ -2,6 +2,16 @@
 <html>
 <head>
 	<title>Ayudantias</title>
+	<style>
+		#map1 {
+		height: 300px;
+		width: 500px;
+		}
+		#map2 {
+		height: 300px;
+		width: 500px;
+		}
+    </style>
 </head>
 <body>
 <div class="container">
@@ -20,8 +30,7 @@
 	</ul>
 
 	<label>Ubicacion:</label>
-	<div class="mapa">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2370.6959893725975!2d-79.9652722161783!3d-2.146211694038797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1481690925119" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div id="map1">
 	</div>
 	</div>
 
@@ -34,13 +43,59 @@
 	</ul>
 
 	<label>Ubicacion:</label>
-	<div class="mapa">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2370.6959893725975!2d-79.9652722161783!3d-2.146211694038797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1481690925119" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div id="map2">
 	</div>
 	</div>
 
 </div>
 
+<script>
+   	function initMap() {
+   		// Mapa 1
+		var map1 = new google.maps.Map(document.getElementById('map1'), {
+		center: new google.maps.LatLng(-33.863276, 151.207977), //Cambia el centro
+		zoom: 12
+		});
+		var infoWindow = new google.maps.InfoWindow;
+		var marker = new google.maps.Marker({
+		map: map1,
+		label: 'A',
+		position: new google.maps.LatLng(-33.861034,151.171936)//coordenadas del marcador
+		});
+		var infowincontent = document.createElement('div');
+		var strong = document.createElement('strong');
+		strong.textContent = "Ayudantia 1"
+		infowincontent.appendChild(strong);
+		infowincontent.appendChild(document.createElement('br'));
+		marker.addListener('click', function() {
+		      infoWindow.setContent(infowincontent);
+		      infoWindow.open(map1, marker);
+		}); 
+		//Mapa 2
+		var map2 = new google.maps.Map(document.getElementById('map2'), {
+		center: new google.maps.LatLng(-33.863276, 151.207977),
+		zoom: 12
+		});
+		var infoWindow = new google.maps.InfoWindow;
+		var marker = new google.maps.Marker({
+		map: map2,
+		label: 'A',
+		position: new google.maps.LatLng(-33.861034,151.171936)
+		});
+		var infowincontent = document.createElement('div');
+		var strong = document.createElement('strong');
+		strong.textContent = "Ayudantia 2"
+		infowincontent.appendChild(strong);
+		infowincontent.appendChild(document.createElement('br'));
+		marker.addListener('click', function() {
+		      infoWindow.setContent(infowincontent);
+		      infoWindow.open(map2, marker);
+		});          
+    }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2xSvzCysAkkWiJZZHaHVMkG9A-UKFrU&callback=initMap">
+</script>
 
 </body>
 </html>
