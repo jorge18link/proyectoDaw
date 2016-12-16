@@ -1,11 +1,59 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Oxygen');
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+/*---------Start: Modificación Fernando Css-Style*/
+.msc-home{
+	padding-left: 0px;
+}
+iframe {
+	padding-top: 12px;
+}
+
+.pyton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+path {
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-dasharray: 853;
+  animation: 6s draw forwards;
+}
+
+@keyframes draw {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 853;
+  }
+  70% {
+    fill-opacity: 0;
+    stroke: #000;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke: none;
+  }
+}
+/*--------Finish: Modificación Fernando Css-Style*/
 body, html{ 
 	font-family: 'Oxygen', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a; 
+}
+.page-scroll, .navbar-brand{
+	font-family: 'Comfortaa', sans-serif;
+	border: none;
 }
 h1{
 	text-trform: uppercase;
@@ -568,10 +616,4 @@ nav#footer p{
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
-}
-
-
-.page-scroll, .navbar-brand{
-	font-family: 'Comfortaa', sans-serif;
-	border: none;
 }
