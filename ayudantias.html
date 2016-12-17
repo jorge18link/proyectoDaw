@@ -1,46 +1,286 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Ayudantias</title>
-</head>
-<body>
-<div class="container">
-	<div class="nav">
-		
-	</div>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundamentos de Programación</title>
+    <meta name="description" content="Stio Web del curso de Fundamentos de Programación">
+    <meta name="keywords" content="Fundamentos de Programación, Python">
+    <meta name="author" content="Fernando, Jorge, Karen, Israel">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-	<h1 id="titulo">Ayudantias</h1>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-	<div class="ayudantia">
-	<h2>Ayudantia 1:</h2>
-	<ul>
-		<li>Dia: WIP</li>
-		<li>Hora: WIP</li>
-		<li>Aula: WIP</li>
-	</ul>
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
 
-	<label>Ubicacion:</label>
-	<div class="mapa">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2370.6959893725975!2d-79.9652722161783!3d-2.146211694038797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1481690925119" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
-	</div>
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-	<div class="ayudantia">
-	<h2>Ayudantia 2:</h2>
-	<ul>
-		<li>Dia: WIP</li>
-		<li>Hora: WIP</li>
-		<li>Aula: WIP</li>
-	</ul>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-	<label>Ubicacion:</label>
-	<div class="mapa">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2370.6959893725975!2d-79.9652722161783!3d-2.146211694038797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1481690925119" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
-	</div>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-</div>
+    <style type="text/css">
+      .ulAyudantias{
+        padding: 0px;
+        margin: 0px;
+      }
+      .ulAyudantias>li{
+        display: inline;
+        padding: 15px;
+      }
+      .titulo{
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      .mapas{
+        height: 50vh;
+        width: 100%;
+      }
+      #tf-ayudantias{
+        padding-bottom: 25px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">FAST-CODING</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="page-scroll">Inicio</a></li>
+            <li><a href="curso.html" class="page-scroll">Curso</a></li>
+            <li><a href="equipo.html" class="page-scroll">Equipo</a></li>
+            <li><a href="semana.html" class="page-scroll">Semana a Semana</a></li>
+            <li><a href="#tf-home" class="page-scroll">Ayudantías</a></li>
+            <li><a href="sandbox.html" class="page-scroll">Sandbox</a></li>
+            <li><a href="proyectos.html" class="page-scroll">Proyectos</a></li>
+            <li><a class="page-scroll" data-toggle="modal" data-target="#login-modal">Iniciar Sesión</a></li>
+            <li></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="login-modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <!-- Modal content-->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Inicia Sesión en FAST-CODING</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div class="well">
+                          <form name="loginform" id="loginForm" method="POST" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Username</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Recordarme
+                                  </label><br>
+                              </div>
+                              <button type="submit" onclick="validate();" class="btn btn-success btn-block">Iniciar Sesión</button>
+                              <a href="/forgot/" class="btn btn-default btn-block">Ayuda</a>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <p class="lead">Registrate ahora <span class="text-success">GRATIS</span></p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> Comparte tus conocimientos</li>
+                          <li><span class="fa fa-check text-success"></span> Practica ejercicios</li>
+                          <li><span class="fa fa-check text-success"></span> Guarda favoritos</li>
+                          <li><span class="fa fa-check text-success"></span> Planificación del curso</li>
+                          <li><span class="fa fa-check text-success"></span> Obtén puntos adicionales</li>
+                          <li><a href="/read-more/"><u>Leer más</u></a></li>
+                      </ul>
+                      <p><a href="/new-customer/" class="btn btn-info btn-block">Si porfavor, Registrar ahora!</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+    </nav>
+
+    <!-- Home Page
+    ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+            <div class="content">
+                <h1>Ayudantias: <span id="typed" class="typed"></span></h1>
+                <p class="lead">En esta sección encontrara información acerca de las ayudantias existentes</p><p>Da click en el botón para bajar</p>
+                <a href="#tf-ayudantias" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--=================Ayudantias=========================-->
+    <div id="tf-ayudantias">
+      <div class="container">
+        <div class="row">
+          <div class="ayudantias">
+            <div class="ayu-info text-center">
+              <h2 class="titulo">Ayudantia 1</h2>
+              <ul class="ulAyudantias">
+                <li><strong>Dia:</strong> WIP</li>
+                <li><strong>Hora:</strong> WIP</li>
+                <li><strong>Aula:</strong> WIP</li>
+              </ul>
+            </div>
+          
+            <div class="ayu-ubicacion">
+              <p>Ubicación:</p>
+              <div id="map1" class="mapas""></div>
+            </div>
+          </div>
+
+          <div class="ayudantias">
+            <div class="ayu-info text-center">
+              <h2 class="titulo">Ayudantia 2</h2>
+              <ul class="ulAyudantias">
+                <li><strong>Dia:</strong> WIP</li>
+                <li><strong>Hora:</strong> WIP</li>
+                <li><strong>Aula:</strong> WIP</li>
+              </ul>
+            </div>
+          
+            <div class="ayu-ubicacion">
+              <p>Ubicación:</p>
+              <div id="map2" class="mapas"></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+        
+    </div>
+    <!--=================/Ayudantias=========================-->
+
+    <nav id="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014. Designed by <a href="https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira</a></p>
+            </div>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scripts
+    ==========================================-->
+
+    <script>
+      function initMap() {
+        // Mapa 1
+        var map1 = new google.maps.Map(document.getElementById('map1'), {
+        center: new google.maps.LatLng(-2.145147, -79.966820), //Cambia el centro
+        zoom: 17
+        });
+        var infoWindow = new google.maps.InfoWindow;
+        var marker = new google.maps.Marker({
+        map: map1,
+        label: 'A',
+        position: new google.maps.LatLng(-2.144622, -79.967571)//coordenadas del marcador
+        });
+        var infowincontent = document.createElement('div');
+        var strong = document.createElement('strong');
+        strong.textContent = "Ayudantia 1"
+        infowincontent.appendChild(strong);
+        infowincontent.appendChild(document.createElement('br'));
+        marker.addListener('click', function() {
+              infoWindow.setContent(infowincontent);
+              infoWindow.open(map1, marker);
+        }); 
+        //Mapa 2
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+        center: new google.maps.LatLng(-2.145147, -79.966820),
+        zoom: 17
+        });
+        var infoWindow = new google.maps.InfoWindow;
+        var marker = new google.maps.Marker({
+        map: map2,
+        label: 'A',
+        position: new google.maps.LatLng(-2.144622, -79.967571)
+        });
+        var infowincontent = document.createElement('div');
+        var strong = document.createElement('strong');
+        strong.textContent = "Ayudantia 2"
+        infowincontent.appendChild(strong);
+        infowincontent.appendChild(document.createElement('br'));
+        marker.addListener('click', function() {
+              infoWindow.setContent(infowincontent);
+              infoWindow.open(map2, marker);
+        });          
+      }
+    </script>
 
 
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2xSvzCysAkkWiJZZHaHVMkG9A-UKFrU&callback=initMap">
+    </script>
+
+  </body>
 </html>
