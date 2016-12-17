@@ -161,38 +161,7 @@
     <!--=================Ayudantias=========================-->
     <div id="tf-ayudantias">
       <div class="container">
-        <div class="row">
-          <div class="ayudantias">
-            <div class="ayu-info text-center">
-              <h2 class="titulo">Ayudantia 1</h2>
-              <ul class="ulAyudantias">
-                <li><strong>Dia:</strong> WIP</li>
-                <li><strong>Hora:</strong> WIP</li>
-                <li><strong>Aula:</strong> WIP</li>
-              </ul>
-            </div>
-          
-            <div class="ayu-ubicacion">
-              <p>Ubicación:</p>
-              <div id="map1" class="mapas""></div>
-            </div>
-          </div>
-
-          <div class="ayudantias">
-            <div class="ayu-info text-center">
-              <h2 class="titulo">Ayudantia 2</h2>
-              <ul class="ulAyudantias">
-                <li><strong>Dia:</strong> WIP</li>
-                <li><strong>Hora:</strong> WIP</li>
-                <li><strong>Aula:</strong> WIP</li>
-              </ul>
-            </div>
-          
-            <div class="ayu-ubicacion">
-              <p>Ubicación:</p>
-              <div id="map2" class="mapas"></div>
-            </div>
-          </div>
+        <div id="todo" class="row">
         </div>
       </div> 
         
@@ -215,55 +184,6 @@
         </div>
     </nav>
 
-    <!-- Scripts
-    ==========================================-->
-
-    <script>
-      function initMap() {
-        // Mapa 1
-        var map1 = new google.maps.Map(document.getElementById('map1'), {
-        center: new google.maps.LatLng(-2.145147, -79.966820), //Cambia el centro
-        zoom: 17
-        });
-        var infoWindow = new google.maps.InfoWindow;
-        var marker = new google.maps.Marker({
-        map: map1,
-        label: 'A',
-        position: new google.maps.LatLng(-2.144622, -79.967571)//coordenadas del marcador
-        });
-        var infowincontent = document.createElement('div');
-        var strong = document.createElement('strong');
-        strong.textContent = "Ayudantia 1"
-        infowincontent.appendChild(strong);
-        infowincontent.appendChild(document.createElement('br'));
-        marker.addListener('click', function() {
-              infoWindow.setContent(infowincontent);
-              infoWindow.open(map1, marker);
-        }); 
-        //Mapa 2
-        var map2 = new google.maps.Map(document.getElementById('map2'), {
-        center: new google.maps.LatLng(-2.145147, -79.966820),
-        zoom: 17
-        });
-        var infoWindow = new google.maps.InfoWindow;
-        var marker = new google.maps.Marker({
-        map: map2,
-        label: 'A',
-        position: new google.maps.LatLng(-2.144622, -79.967571)
-        });
-        var infowincontent = document.createElement('div');
-        var strong = document.createElement('strong');
-        strong.textContent = "Ayudantia 2"
-        infowincontent.appendChild(strong);
-        infowincontent.appendChild(document.createElement('br'));
-        marker.addListener('click', function() {
-              infoWindow.setContent(infowincontent);
-              infoWindow.open(map2, marker);
-        });          
-      }
-    </script>
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
@@ -278,9 +198,14 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+    <!--
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2xSvzCysAkkWiJZZHaHVMkG9A-UKFrU&callback=initMap">
     </script>
+    -->
+    
+    <script type="text/javascript" src="js/ayudantias.js"></script>
+
 
   </body>
 </html>
