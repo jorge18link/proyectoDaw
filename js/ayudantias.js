@@ -26,7 +26,7 @@ function initMap(aula,horario,latitud,longitud) {
 
 
 function agregarAyudantes() {
-    var url ="http://localhost/proyecto/json/ayudantes.json"
+    var url ="json/ayudantes.json"
     $.getJSON(url, function(resp){
         console.log(resp);
         var ayudantes = resp.Ayudantes;
