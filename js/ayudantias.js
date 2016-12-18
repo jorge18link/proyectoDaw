@@ -1,14 +1,20 @@
 
+//google.maps.event.trigger(map, 'resize')
+var mapa;
+
+
 function initMap(aula,horario,latitud,longitud) {
-    var map = new google.maps.Map(document.getElementById('map'), {
-    center: new google.maps.LatLng(-2.143161, -79.968447),
-    zoom: 17
+    //regrescar
+    mapa = new google.maps.Map(document.getElementById('map'), {
+        center: new google.maps.LatLng(-2.143161, -79.968447),
+        zoom: 16
     });
+
     var infoWindow = new google.maps.InfoWindow;
     var marker = new google.maps.Marker({
-    map: map,
-    label: 'A',
-    position: new google.maps.LatLng(latitud, longitud)
+        map: mapa,
+        label: 'A',
+        position: new google.maps.LatLng(latitud, longitud)
     });
     var infowincontent = document.createElement('div');
     var aula = document.createElement('strong');
@@ -20,16 +26,19 @@ function initMap(aula,horario,latitud,longitud) {
     infowincontent.appendChild(hora);
     marker.addListener('click', function() {
           infoWindow.setContent(infowincontent);
-          infoWindow.open(map, marker);
-    });          
+          infoWindow.open(mapa, marker);
+          
+    });
+
 }
 
 
 function agregarAyudantes() {
     var url ="json/ayudantes.json"
+    
     $.getJSON(url, function(resp){
-        console.log(resp);
         var ayudantes = resp.Ayudantes;
+        initMap();
         $("#todo").append($("<h1>",{"class":"text-center"}).text("Ayudantes"));
         ayudantes.forEach(function(ayuAct){
         	$("#todo").append(
@@ -54,13 +63,16 @@ function agregarAyudantes() {
 	   				)
 	   			)
                 $("#"+hor_act.id).click(function(){
-                    console.log("entre");
                     var latitud= hor_act.lat;
                     var longitud= hor_act.lng;
                     var aula=hor_act.aula;
                     var horario=hor_act.horario;
-                    initMap(aula,horario,latitud,longitud);
-                    $('#modal-mapa').modal('show');
+                    initMap(aula,horario,latitud,longitud); 
+                    $('#modal-mapa').on('shown.bs.modal', function () {
+                      google.maps.event.trigger(mapa, 'resize');
+                    })
+                    $('#modal-mapa').modal("show");
+                    
                 })
                 
             })
