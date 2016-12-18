@@ -1,29 +1,29 @@
-/*
-function initMap() {
-    var map2 = new google.maps.Map(document.getElementById('map2'), {
-    center: new google.maps.LatLng(-2.145147, -79.966820),
+
+function initMap(aula,horario,latitud,longitud) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+    center: new google.maps.LatLng(-2.143161, -79.968447),
     zoom: 17
     });
     var infoWindow = new google.maps.InfoWindow;
-    var marker2 = new google.maps.Marker({
-    map: map2,
+    var marker = new google.maps.Marker({
+    map: map,
     label: 'A',
-    position: new google.maps.LatLng(-2.144622, -79.967571)
+    position: new google.maps.LatLng(latitud, longitud)
     });
     var infowincontent = document.createElement('div');
     var aula = document.createElement('strong');
     var hora = document.createElement('strong');
-    aula.textContent = "Aula: ba-15"
-    hora.textContent = "Horario: 15:00 - 17:00"
+    aula.textContent = "Aula: "+aula;
+    hora.textContent = "Horario: "+horario;
     infowincontent.appendChild(aula);
     infowincontent.appendChild(document.createElement('br'));
     infowincontent.appendChild(hora);
-    marker2.addListener('click', function() {
+    marker.addListener('click', function() {
           infoWindow.setContent(infowincontent);
-          infoWindow.open(map2, marker2);
+          infoWindow.open(map, marker);
     });          
 }
-*/
+
 
 function agregarAyudantes() {
     var url ="http://localhost/proyecto/json/ayudantes.json"
@@ -32,15 +32,14 @@ function agregarAyudantes() {
         var ayudantes = resp.Ayudantes;
         $("#todo").append($("<h1>",{"class":"text-center"}).text("Ayudantes"));
         ayudantes.forEach(function(ayuAct){
-        	console.log(ayuAct.matricula);
         	$("#todo").append(
-	    		$("<div>",{"class":"ayudante"}).append(
-					$("<div>",{"class":"ayu-info"}).append(
+	    		$("<div>",{"class":"ayudante thumbnail col-md-12"}).append(
+					$("<div>",{"class":"ayu-info col-md-12"}).append(
 						$("<p>").append($("<strong>").text("Nombre: "),""+ayuAct.nombre),
 						$("<p>").append($("<strong>").text("Correo: "),""+ayuAct.correo)
 					),
 					$("<div>",{"class":"ayu-horarios col-md-12","id":""+ayuAct.matricula}).append(
-						$("<h3>").text("Ayudantias")
+						$("<h3>").text("Ayudantias:")
 					)		
 				)
 	   		)
@@ -50,13 +49,25 @@ function agregarAyudantes() {
 	   					$("<p>").append($("<strong>").text("Día: "),""+hor_act.dia),
 		   				$("<p>").append($("<strong>").text("Aula: "),""+hor_act.aula),
 		   				$("<p>").append($("<strong>").text("Horario: "),""+hor_act.hora),
-		   				$("<p>").append($("<strong>").text("Ubicacion en el mapa: "),"WIP")
+		   				$("<p>").append($("<strong>").text("Ubicacion en el mapa: "),$("<button>",{"id":""+hor_act.id,"class":"btn"}).text("ver")),
+                        $("<hr>")
 	   				)
-	   			)	
-	   		})	
+	   			)
+                $("#"+hor_act.id).click(function(){
+                    console.log("entre");
+                    var latitud= hor_act.lat;
+                    var longitud= hor_act.lng;
+                    var aula=hor_act.aula;
+                    var horario=hor_act.horario;
+                    initMap(aula,horario,latitud,longitud);
+                    $('#modal-mapa').modal('show');
+                })
+                
+            })
         })	 
     });
 }
+
 
 
 

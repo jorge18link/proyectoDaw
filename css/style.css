@@ -7,6 +7,10 @@ body, html{
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a; 
 }
+.page-scroll, .navbar-brand{
+	font-family: 'Comfortaa', sans-serif;
+	border: none;
+}
 h1{
 	text-trform: uppercase;
 }
@@ -132,7 +136,7 @@ font-weight: 900;
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
-	height: 750px;
+	height: 100vh;
 	background-attachment: fixed;
 }
 #tf-home p.lead{
@@ -154,7 +158,7 @@ a.fa.fa-angle-down {
 	border: 2px solid #b4b4b4;
 	border-radius: 50%;
 	font-size: 24px;
-	margin-top: 200px;
+	margin-top: 25vh;
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
@@ -568,10 +572,4 @@ nav#footer p{
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
-}
-
-
-.page-scroll, .navbar-brand{
-	font-family: 'Comfortaa', sans-serif;
-	border: none;
 }
