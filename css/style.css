@@ -11,24 +11,22 @@ body, html{
 	font-family: 'Comfortaa', sans-serif;
 	border: none;
 }
-.divBtn{
-	padding-top: 0px;
+.herram{
+	font-size: 140%;
+	font-family: cursive;
+	color: #f1be5e
 }
-.cuadro1{
-    margin-left: 75px;
-    margin-right: 75px;
-    border-left-width: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    position: relative;
-    bottom: 50px;
-    padding-bottom: 0px;
+.imgn{
+	text-align: center;
 }
-.boton{
-	position: relative;
-	bottom: 75px;
+.correq{
+	border: 1px solid;
+	border-radius: 15px;
+	background-color: rgba(125,125,125,0.5);
 }
-
+.descript{
+	line-height: 40px;
+}
 h1{
 	text-trform: uppercase;
 }
