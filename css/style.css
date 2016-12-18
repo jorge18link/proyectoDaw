@@ -5,8 +5,30 @@ body, html{
 	font-family: 'Oxygen', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #5a5a5a; 
+	color: #5a5a5a;
 }
+.page-scroll, .navbar-brand{
+	font-family: 'Comfortaa', sans-serif;
+	border: none;
+}
+.divBtn{
+	padding-top: 0px;
+}
+.cuadro1{
+    margin-left: 75px;
+    margin-right: 75px;
+    border-left-width: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    bottom: 50px;
+    padding-bottom: 0px;
+}
+.boton{
+	position: relative;
+	bottom: 75px;
+}
+
 h1{
 	text-trform: uppercase;
 }
@@ -154,7 +176,7 @@ a.fa.fa-angle-down {
 	border: 2px solid #b4b4b4;
 	border-radius: 50%;
 	font-size: 24px;
-	margin-top: 200px;
+	margin-top: 150px;
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
@@ -568,10 +590,4 @@ nav#footer p{
 	background: #FCAC45;
 	border-color: #FCAC45;
 	color: #ffffff;
-}
-
-
-.page-scroll, .navbar-brand{
-	font-family: 'Comfortaa', sans-serif;
-	border: none;
 }
