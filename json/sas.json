@@ -1,0 +1,133 @@
+{
+  "datos": [
+    {
+      "numerodelasemana": "1",
+      "PrimeraClase": "introducion a la programacion",
+      "SegundaClase": "Tipos de dato.Variables y Asignacion",
+      "image": "descarga.jpg",
+      "recursos": [
+        {
+          "primero": "Material/materialfundamentos/diapositivas/01-Introduccion.pptx",
+          "segundo": "Material/materialfundamentos/diapositivas/02-Datos_Variables_Operadores.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Ejercicios-VariablesControl.pdf",
+          "cuatro": "http://entrenamiento-python-basico.readthedocs.io/es/latest/leccion3/",
+          "name1": "01 - Introduccion.pptx",
+          "name2": "02 - Datos_Variables_Operadores.pdf",
+          "ns": "1"
+        }
+      ]
+    },
+    {
+      "numerodelasemana": "2",
+      "PrimeraClase": "Tipos de dato. Cadena de caracteres",
+      "SegundaClase": "Estructura de control. Condicionales",
+      "image": "descarga2.png",
+      "recursos": [
+        {
+          "primero": "Material/materialdefundamentos/diapositivas/03-Manejodetexto.pdf",
+          "segundo": "Materiales/materialfundamentos/diapositivas/04-Condicionales.pdf",
+          "tercero": "Material/materialdefundamentos/talleres-ejercicios-deberes/deber01.pdf",
+          "cuatro": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller2.1-IdentificarTipodeDatos.pdf",
+          "quinto": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller2.2-TiposdeDatos.pdf",
+          "sexto": "Taller3.1-EjerciciosCondicionales.pdf",
+          "name1": "03 - Manejodetexto.pdf",
+          "name2": "04 - Condicionales.pdf",
+          "ns": "2"
+        }
+      ]
+    },
+    {
+      "numerodelasemana": "3",
+      "PrimeraClase": "Estructura de control. Lazos de repeticion fija",
+      "SegundaClase": "Esstructura de control. Lazos  con condicion",
+      "image": "descarga3.png",
+      "recursos": [
+        {
+          "primero": "Material/materialdefundamentos/diapositivas/05-Lazos.pdf",
+          "segundo": " ",
+          "tercero": "Taller4.1-EstructurasdeControlIterativasyListas.pdf",
+          "cuatro": "https://www.pythonmania.net/es/2013/04/05/control-de-bucles-break-continue-y-pass/",
+          "name1": "05 - Lazos.pdf",
+          "ns3": "3"
+        }
+      ]
+    },
+    {
+      "numerodelasemana": "4",
+      "PrimeraClase": "Propiedades de las listas. Indexacion de las listas",
+      "SegundaClase": "Slincing con listas",
+      "image": "descarga4.png",
+      "recursos": [
+        {
+          "primero": "Material/materialdefundamentos/diapositivas/06-Listas.pptx",
+          "segundo": " ",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/practica-strings-listas.pdf",
+          "cuatro": "Material/materualfundamentos/talleres-ejercicios-deberes/Talleres/talller4.2-ListasyStrings.pdf",
+          "name1": "06 - Listas.pdf",
+          "ns": "4"
+        }
+      ]
+    },
+    {
+      "numerodelasemana": "5",
+      "PrimeraClase": "Funciones Basicas de la lista",
+      "SegundaClase": "Desarollo de ejercicios. Taller con listas",
+      "image": "descarga5.png",
+      "recursos": [
+        {
+          "primero": " ",
+          "segundo": " ",
+          "tercero": "Materiales/materialfundamentos/talleres-ejercicios-deberes/TallerdeListas.pdf",
+          "cuatro": "Ejercicios-Listas.pdf",
+          "quinto": "Taller4.2-ListasyStrings.pdf",
+          "sexto": "Taller4.3-Refuerzo.pdf",
+          "ns": "5"
+        }
+      ]
+    },
+    {
+      "numerodelasemana": "6",
+      "PrimeraClase": "Introduccion a Arreglos n-dimensionales. Propiedades",
+      "SegundaClase": "Arreglos n-dimensionales.Indexacion Basica ",
+      "image": "descarga6.jpg",
+      "recursos": [
+        {
+          "primero": "Material/materialdefundamentos/diapositivas/07-Arreglos.pptx",
+          "segundo": " ",
+          "tercero": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller5.1Arreglosn-dimensionales.pdf",
+          "cuatro": "http://progra.usm.cl/apunte/materia/arreglos-2d.html",
+          "name1": "07 - Arreglos.pdf",
+          "ns": "6"
+        }
+      ]
+    },
+    {
+      "numerdelasemana": "7",
+      "PrimeraClase": "Arreglos n-dimensionales. Indexacion Booleana",
+      "SegundaClase": "Arreglos n-dimensionales. Indexacion con Arreglos",
+      "image": "descarga7.png",
+      "recursos": [
+        {
+          "primero": " ",
+          "segundo": " ",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller5.2ArreglosyMatrices.pdf",
+          "ns": "7"
+        }
+      ]
+    },
+    {
+      "numerodelasemana": "8",
+      "PrimeraClase": "Slicing",
+      "SegundaClase": "Operaciones aritmeticas entre matrices",
+      "image": "descarga8.png",
+      "recursos": [
+        {
+          "primero": " ",
+          "segundo": " ",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller5.3Matrices.pdf",
+          "ns": "8"
+        }
+      ]
+    }
+  ]
+}
