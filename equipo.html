@@ -36,6 +36,21 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
+<<<<<<< HEAD
+=======
+    <style type="text/css">
+      .thumbnail .caption h3{
+          color: orange;
+      }
+      .thumbnail {
+        background-color: #EDEDED;
+        
+        height: 240px;
+
+      }
+    </style>
+
+>>>>>>> origin/master
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -139,11 +154,16 @@
                 <h1>Fundamentos de Programación: <span id="typed" class="typed"></span></h1>
                 <!---<h1>Bienvenido a <strong><span class="color">Código Fácil</span></strong></h1>-->
                 <p class="lead">"Todos en este país deberían aprender a <strong>programar</strong> un ordenador, porque te enseña a <strong>pensar.</strong>"</p><p>Steve Jobs.</p>
+<<<<<<< HEAD
                 <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+=======
+                <a href="#tf-team" class="fa fa-angle-down page-scroll"></a>
+>>>>>>> origin/master
             </div>
         </div>
     </div>
     
+<<<<<<< HEAD
     <!-- Team Page
     ==========================================-->
     <div id="tf-team" class="text-center">
@@ -251,6 +271,193 @@
     </div>
 
     <nav id="footer">
+=======
+    
+
+        <!-- Team Page
+    ==========================================-->
+    <div id="tf-team" class="text-center" ng-app="myApp" ng-controller="myCtrl">
+      <div class="overlay">
+        <div class="container">
+          <div class="section-title center">
+            <h2>Meet <strong>our</strong> Professor</h2>
+            <div class="line">
+              <hr>
+            </div>
+          </div>
+
+          <div id="team" class="owl-carousel owl-theme row">
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[0].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[0].nombre}}</h3>
+                  <p>{{todos[0].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[1].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[1].nombre}}</h3>
+
+                  <p>{{todos[1].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[2].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[2].nombre}}</h3>
+
+                  <p>{{todos[2].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[3].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[3].nombre}}</h3>
+
+                  <p>{{todos[3].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[4].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[4].nombre}}</h3>
+
+                  <p>{{todos[4].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[5].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[5].nombre}}</h3>
+                  <p>{{todos[5].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[6].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[6].nombre}}</h3>
+                  <p>{{todos[6].mail}}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="thumbnail">
+                <img ng-src="{{todos[7].foto}}" alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[7].nombre}}</h3>
+                  <p>{{todos[7].mail}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumbnail">
+                <img  ng-src="{{todos[8].foto}}"alt="..." class="img-circle team-img">
+                <div class="caption">
+                  <h3>{{todos[8].nombre}}</h3>
+                  <p>{{todos[8].mail}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div> 
+
+     
+
+     <div id="" class="text-center" ng-app="myApp" ng-controller="myCtrl">
+      <div class="container">
+       <div class="row">
+        <div class="section-title center">
+          <h2>Meet <strong>our</strong> Class helpers</h2>
+          <div class="line">
+            <hr>
+          </div> 
+        </div>
+        <div class="col-md-offset-1">
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">Galo Daniel Castillo Lopez</h3>
+              <p>gadacast@espol.edu.ec</p>
+            </div>
+          </div>
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">Jorge Luis Cedeño Arteaga</h3>
+              <p>jlcedeno@espol.edu.ec</p>
+            </div>
+          </div>
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">María Belén Guaranda Cabezas</h3>
+              <p>mguarand@espol.edu.ec</p>
+            </div>
+          </div>
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">Gerald Fernando Gutierrez Jimenez</h3>
+              <p>gadacast@espol.edu.ec</p>
+            </div>
+          </div>
+
+          <div class="col-md-offset-2">
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">Emmanuel Fernando Morán Barreiro</h3>
+              <p>fnando1995@gmail.com</p>
+            </div>
+          </div>
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">Leonardo Xavier Kuffo Rivero</h3>
+              <p>lkuffo@espol.edu.ec</p>
+            </div>
+          </div>
+          <div class="thumbnail col-md-3">
+            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
+            <div class="caption">
+              <h3 class="ayudante">Jorge Isaac Guerra Solís</h3>
+              <p>jiguerra@espol.edu.ec</p>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>    
+    </div>  
+  </div> 
+
+
+
+     <nav id="footer">
+>>>>>>> origin/master
         <div class="container">
             <div class="pull-left fnav">
                 <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014. Designed by <a href="https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira</a></p>
@@ -270,12 +477,21 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<<<<<<< HEAD
+=======
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+>>>>>>> origin/master
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
 
     <script src="js/owl.carousel.js"></script>
+<<<<<<< HEAD
+=======
+    <script src="js/profesor.js"></script>>
+
+>>>>>>> origin/master
 
     <!-- Javascripts
     ================================================== -->
