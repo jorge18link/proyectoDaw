@@ -68,76 +68,13 @@
             <li><a href="equipo.html" class="page-scroll">Equipo</a></li>
             <li><a href="semana.html" class="page-scroll">Semana a Semana</a></li>
             <li><a href="ayudantias.html" class="page-scroll">Ayudantías</a></li>
-            <li><a href="sandbox.html" class="page-scroll">Sandbox</a></li>
-            <li><a href="proyectos.html" class="page-scroll">Proyectos</a></li>
-            <li><a class="page-scroll" data-toggle="modal" data-target="#login-modal">Iniciar Sesión</a></li>
+            <li><a href="login-sandbox.html" class="page-scroll">Sandbox</a></li>
+            <li><a href="login-proyectos.html" class="page-scroll">Proyectos</a></li>
+            <li><a href="login.html" class="page-scroll">Iniciar Sesión</a></li>
             <li></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-      
-      <!-- Modal -->
-      <div class="modal fade" id="login-modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-      <!-- Modal content-->
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Inicia Sesión en FAST-CODING</h4>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <div class="well"> 
-                          <div class="alert alert-info">
-                            Username: test<br />
-                            Password: test
-                          </div>
-                          <div ng-show="error" class="alert alert-danger">{{error}}</div>
-                          <form name="loginform" ng-submit="login()" role="form" id="loginForm" method="POST" novalidate="novalidate">
-                              <div class="form-group">
-                                  <label for="username" class="control-label">Username</label>
-                                  <i class="fa fa-key"></i>
-                                  <input type="text" class="form-control" id="username" name="username" value="" ng-model="username" required="" title="Please enter you username" placeholder="example@gmail.com">
-                                  <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
-                              </div>
-                              <div class="form-group">
-                                  <label for="password" class="control-label">Password</label>
-                                  <i class="fa fa-lock"></i>
-                                  <input type="password" class="form-control" id="password" name="password" value="" ng-model="password" required="" title="Please enter your password">
-                                  <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
-                              </div>
-                              <div class="form-actions">
-                                <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-danger">Login</button>
-                                <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-                              </div>
-                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                              <div class="checkbox">
-                                  <label>
-                                      <input type="checkbox" name="remember" id="remember"> Recordarme
-                                  </label><br>
-                              </div>
-                              <button type="submit" onclick="validate();" class="btn btn-success btn-block">Iniciar Sesión</button>
-                              <a href="/forgot/" class="btn btn-default btn-block">Ayuda</a>
-                          </form>
-                      </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <p class="lead">Registrate ahora <span class="text-success">GRATIS</span></p>
-                      <ul class="list-unstyled" style="line-height: 2">
-                          <li><span class="fa fa-check text-success"></span> Comparte tus conocimientos</li>
-                          <li><span class="fa fa-check text-success"></span> Practica ejercicios</li>
-                          <li><span class="fa fa-check text-success"></span> Guarda favoritos</li>
-                          <li><span class="fa fa-check text-success"></span> Planificación del curso</li>
-                          <li><span class="fa fa-check text-success"></span> Obtén puntos adicionales</li>
-                          <li><a href="/read-more/"><u>Leer más</u></a></li>
-                      </ul>
-                      <p><a href="/new-customer/" class="btn btn-info btn-block">Si porfavor, Registrar ahora!</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
 
     </nav>
 
@@ -281,9 +218,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <!-- AngularJs (necessary for login)-->
+    <!-- AngularJs (necessary for login)
     <script type="text/Javascript" src="js/angular.min.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
