@@ -37,17 +37,21 @@
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <style type="text/css">
-      .thumbnail .caption h3{
-          color: orange;
-      }
-      .thumbnail {
-        background-color: #EDEDED;
-        
-        height: 240px;
+       
+       .allofthis{
 
-      }
+          border: 1px solid orange;
+          background-color: rgba(0,0,0,0.4);
+       }
+
+       #tf-about{
+        background-image: url(img/04.jpg);
+       }
+       .p{
+        color:white;
+       }
     </style>
-
+      
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,8 +81,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html" class="page-scroll">Inicio</a></li>
             <li><a href="curso.html" class="page-scroll">Curso</a></li>
-            <li><a href="#tf-home" class="page-scroll">Equipo</a></li>
-            <li><a href="semana.html" class="page-scroll">Semana a Semana</a></li>
+            <li><a href="equipo.html" class="page-scroll">Equipo</a></li>
+            <li><a href="#tf-home" class="page-scroll">Semana a Semana</a></li>
             <li><a href="ayudantias.html" class="page-scroll">Ayudantías</a></li>
             <li><a href="sandbox.html" class="page-scroll">Sandbox</a></li>
             <li><a href="proyectos.html" class="page-scroll">Proyectos</a></li>
@@ -156,188 +160,42 @@
         </div>
     </div>
     
-    
-
-        <!-- Team Page
-    ==========================================-->
-    <div id="tf-team" class="text-center" ng-app="myApp" ng-controller="myCtrl">
-      <div class="overlay">
-        <div class="container">
-          <div class="section-title center">
-            <h2>Meet <strong>our</strong> Professor</h2>
-            <div class="line">
-              <hr>
-            </div>
-          </div>
-
-          <div id="team" class="owl-carousel owl-theme row">
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[0].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[0].nombre}}</h3>
-                  <p>{{todos[0].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[1].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[1].nombre}}</h3>
-
-                  <p>{{todos[1].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[2].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[2].nombre}}</h3>
-
-                  <p>{{todos[2].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[3].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[3].nombre}}</h3>
-
-                  <p>{{todos[3].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[4].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[4].nombre}}</h3>
-
-                  <p>{{todos[4].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[5].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[5].nombre}}</h3>
-                  <p>{{todos[5].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[6].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[6].nombre}}</h3>
-                  <p>{{todos[6].mail}}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="thumbnail">
-                <img ng-src="{{todos[7].foto}}" alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[7].nombre}}</h3>
-                  <p>{{todos[7].mail}}</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumbnail">
-                <img  ng-src="{{todos[8].foto}}"alt="..." class="img-circle team-img">
-                <div class="caption">
-                  <h3>{{todos[8].nombre}}</h3>
-                  <p>{{todos[8].mail}}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div> 
-
-     
-
-     <div id="" class="text-center" ng-app="myApp" ng-controller="myCtrl">
+    <div id="tf-about" ng-app="myA" ng-controller="control">
       <div class="container">
-       <div class="row">
-        <div class="section-title center">
-          <h2>Meet <strong>our</strong> Class helpers</h2>
-          <div class="line">
-            <hr>
-          </div> 
-        </div>
-        <div class="col-md-offset-1">
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">Galo Daniel Castillo Lopez</h3>
-              <p>gadacast@espol.edu.ec</p>
-            </div>
-          </div>
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">Jorge Luis Cedeño Arteaga</h3>
-              <p>jlcedeno@espol.edu.ec</p>
-            </div>
-          </div>
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">María Belén Guaranda Cabezas</h3>
-              <p>mguarand@espol.edu.ec</p>
-            </div>
-          </div>
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">Gerald Fernando Gutierrez Jimenez</h3>
-              <p>gadacast@espol.edu.ec</p>
-            </div>
-          </div>
+        <div class="row ContSas">
+          <div class="section-title center">
+             <h2 class="text-center">Primer Parcial <strong> Weeks</strong></h2>
+              <div class="line">
+                <hr>
+              </div>
+              <div  class="col-md-6 allofthis" ng-repeat=" x in todos">
+                      <div class="col-md-2">
+                      <img ng-src="{{x.image}}"" class="img-responsive img-circle Thumbnail">
+                      </div>
+                      <div class="col-md-10">
+                      <p class="p">Primera Clase: {{x.PrimeraClase}}</p>
+                      <p class="p">Segunda Clase: {{x.SegundaClase}}</p>
+                      </div>
+                      <a href="#D{{x.numerodelasemana}}" class="col-md-12" data-toogle="collapse"><i>Recursos <span class="glyphicon glyphicon-menu-down"></span></i></a>
+                      <div  id="D{{x.numerodelasemana}}" class="collapse in">
+                               <div class="col-md-6" ng-repeat="z in x.recursos">
+                                    <h3>Diapositivas</h3>
+                                    <a href="{{z.primero}}"><p class="p">Diapositiva1</p></a>
+                                    <a href="{{z.segundo}}"><p>Diapositiva2</p></a>
+                                    <h3>Taller y practica</h3>
+                                    <a ng-if="z.tercero!==' '" href="{{z.tercero}}"><p class="p">Extra</p></a>
+                                    <a ng-if="z.cuatro!==' '" href="z.cuatro}}"><p class="p">Extra</p></a>
+                                    <a ng-if="z.quinto!==' '" href="{{z.quinto}}"><p class="p">Extra</p></a>
+                                    <a ng-if="z.sexto!==' '" href="{{z.sexto}}"><p class="p">Extra</p></a>
 
-          <div class="col-md-offset-2">
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">Emmanuel Fernando Morán Barreiro</h3>
-              <p>fnando1995@gmail.com</p>
-            </div>
-          </div>
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">Leonardo Xavier Kuffo Rivero</h3>
-              <p>lkuffo@espol.edu.ec</p>
-            </div>
-          </div>
-          <div class="thumbnail col-md-3">
-            <img src="img/team/01.jpg"" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3 class="ayudante">Jorge Isaac Guerra Solís</h3>
-              <p>jiguerra@espol.edu.ec</p>
-            </div>
-          </div>
-          </div>
+                               </div>            
+                      </div>
 
-        </div>
-      </div>    
-    </div>  
-  </div> 
-
+              </div>
+          </div>
+        </div>   
+      </div>
+    </div>
 
 
      <nav id="footer">
@@ -360,7 +218,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
@@ -373,6 +231,7 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/sasprueba.js"></script>
 
   </body>
 </html>
