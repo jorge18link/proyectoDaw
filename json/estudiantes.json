@@ -1,0 +1,14 @@
+{"ESTUDIANTES": [{
+		"nombre": "Sanchez Zambrano Fernando Ismael",
+		"matricula": "201300433",
+		"mail": "ferissan@espol.edu.ec",
+		"birthday": "26 de Junio de 1995",
+		"pass" : "team"
+	}, {
+		"nombre": "Benitez Maldonado Antonio Bill",
+		"matricula": "201300331",
+		"mail": "mabill@espol.edu.ec",
+		"birthday": "23 de Agosto de 1993",
+		"pass" : "12345"
+	}]
+}

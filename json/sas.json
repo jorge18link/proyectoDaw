@@ -4,7 +4,7 @@
       "numerodelasemana": "1",
       "PrimeraClase": "introducion a la programacion",
       "SegundaClase": "Tipos de dato.Variables y Asignacion",
-      "image": "descarga.jpg",
+      "image": "img/descarga.jpg",
       "recursos": [
         {
           "primero": "Material/materialfundamentos/diapositivas/01-Introduccion.pptx",
@@ -21,7 +21,7 @@
       "numerodelasemana": "2",
       "PrimeraClase": "Tipos de dato. Cadena de caracteres",
       "SegundaClase": "Estructura de control. Condicionales",
-      "image": "descarga2.png",
+      "image": "img/descarga2.png",
       "recursos": [
         {
           "primero": "Material/materialdefundamentos/diapositivas/03-Manejodetexto.pdf",
@@ -40,7 +40,7 @@
       "numerodelasemana": "3",
       "PrimeraClase": "Estructura de control. Lazos de repeticion fija",
       "SegundaClase": "Esstructura de control. Lazos  con condicion",
-      "image": "descarga3.png",
+      "image": "img/descarga3.png",
       "recursos": [
         {
           "primero": "Material/materialdefundamentos/diapositivas/05-Lazos.pdf",
@@ -56,7 +56,7 @@
       "numerodelasemana": "4",
       "PrimeraClase": "Propiedades de las listas. Indexacion de las listas",
       "SegundaClase": "Slincing con listas",
-      "image": "descarga4.png",
+      "image": "img/descarga4.png",
       "recursos": [
         {
           "primero": "Material/materialdefundamentos/diapositivas/06-Listas.pptx",
@@ -72,7 +72,7 @@
       "numerodelasemana": "5",
       "PrimeraClase": "Funciones Basicas de la lista",
       "SegundaClase": "Desarollo de ejercicios. Taller con listas",
-      "image": "descarga5.png",
+      "image": "img/descarga5.png",
       "recursos": [
         {
           "primero": " ",
@@ -89,7 +89,7 @@
       "numerodelasemana": "6",
       "PrimeraClase": "Introduccion a Arreglos n-dimensionales. Propiedades",
       "SegundaClase": "Arreglos n-dimensionales.Indexacion Basica ",
-      "image": "descarga6.jpg",
+      "image": "img/descarga6.jpg",
       "recursos": [
         {
           "primero": "Material/materialdefundamentos/diapositivas/07-Arreglos.pptx",
@@ -105,7 +105,7 @@
       "numerdelasemana": "7",
       "PrimeraClase": "Arreglos n-dimensionales. Indexacion Booleana",
       "SegundaClase": "Arreglos n-dimensionales. Indexacion con Arreglos",
-      "image": "descarga7.png",
+      "image": "img/descarga7.png",
       "recursos": [
         {
           "primero": " ",
@@ -119,7 +119,7 @@
       "numerodelasemana": "8",
       "PrimeraClase": "Slicing",
       "SegundaClase": "Operaciones aritmeticas entre matrices",
-      "image": "descarga8.png",
+      "image": "img/descarga8.png",
       "recursos": [
         {
           "primero": " ",

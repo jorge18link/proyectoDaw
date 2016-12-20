@@ -6,6 +6,9 @@ function boton(){
     var temp=$("<div>").append(($("<strong>").text("Titulo: ")),($("<p>").text(titulo)),($("<strong>").text("fecha: ")),($("<p>").text(fecha)),($("<strong>").text("Descripcion: ")),($("<p>").text(descr)));
     $(".contenedor").append(temp);
     $(".contenedor").append($("<hr>"))
+    $("#titulo").val("");
+    $("#fecha").val("");
+    $("#dp").val("");
    });
    
 }

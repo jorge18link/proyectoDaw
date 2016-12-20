@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundamentos de Programación</title>
+    <meta name="description" content="Stio Web del curso de Fundamentos de Programación">
+    <meta name="keywords" content="Fundamentos de Programación, Python">
+    <meta name="author" content="Fernando, Jorge, Karen, Israel">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	.sb-ejer ul{
+    		padding: 0px;
+    		list-style: none;
+    		margin-bottom: 10px;
+    	}
+    </style>
+  </head>
+  <body>
+    <!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">FAST-CODING</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html" class="page-scroll">Inicio</a></li>
+            <li><a href="curso.html" class="page-scroll">Curso</a></li>
+            <li><a href="equipo.html" class="page-scroll">Equipo</a></li>
+            <li><a href="semana.html" class="page-scroll">Semana a Semana</a></li>
+            <li><a href="ayudantias.html" class="page-scroll">Ayudantías</a></li>
+            <li><a href="#tf-home" class="page-scroll">Sandbox</a></li>
+            <li><a href="proyectos.html" class="page-scroll">Proyectos</a></li>
+            <li><a class="page-scroll" data-toggle="modal" data-target="#login-modal">Iniciar Sesión</a></li>
+            <li></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="login-modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <!-- Modal content-->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Inicia Sesión en FAST-CODING</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div class="well">
+                          <form name="loginform" id="loginForm" method="POST" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="username" class="control-label">Username</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Recordarme
+                                  </label><br>
+                              </div>
+                              <button type="submit" onclick="validate();" class="btn btn-success btn-block">Iniciar Sesión</button>
+                              <a href="/forgot/" class="btn btn-default btn-block">Ayuda</a>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <p class="lead">Registrate ahora <span class="text-success">GRATIS</span></p>
+                      <ul class="list-unstyled" style="line-height: 2">
+                          <li><span class="fa fa-check text-success"></span> Comparte tus conocimientos</li>
+                          <li><span class="fa fa-check text-success"></span> Practica ejercicios</li>
+                          <li><span class="fa fa-check text-success"></span> Guarda favoritos</li>
+                          <li><span class="fa fa-check text-success"></span> Planificación del curso</li>
+                          <li><span class="fa fa-check text-success"></span> Obtén puntos adicionales</li>
+                          <li><a href="/read-more/"><u>Leer más</u></a></li>
+                      </ul>
+                      <p><a href="/new-customer/" class="btn btn-info btn-block">Si porfavor, Registrar ahora!</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+    </nav>
+
+    <!-- Home Page
+    ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+            <div class="content">
+
+                <h1>Sandbox: <span id="typed" class="typed"></span></h1>
+                <!---<h1>Bienvenido a <strong><span class="color">Código Fácil</span></strong></h1>-->
+                <p class="lead">Aprende practicando</p><p>Da click en el botón para bajar</p>
+                <a href="#tf-sandbox-est" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--====================SandBox======================-->
+    <div id="tf-sandbox-est">
+        <div class="container">
+        	<div class="row">
+        		<div class="sb-desc thumbnail col-md-6 col-sm-12">
+        			<div class="ejercicios thumbnail">
+        				<p><strong>Titulo: </strong>Variables y tipos de datos</p>
+        				<p><strong>Descripcion: </strong>Se aprendera a declarar variables y conocer los tipos de datos posibles en python</p>
+        				<p><strong>Dificultad: </strong>Easy <button id="varia" class="btn-success">Realizar</button></p>
+        			</div>
+        			<div class="ejercicios thumbnail">
+        				<p><strong>Titulo: </strong>Estructuras de control</p>
+        				<p><strong>Descripcion: </strong> Se aprendera a usar las estructuras de control para validar condiciones.</p>
+        				<p><strong>Dificultad: </strong>Medium <button id="estruc-ctrl" class="btn-success">Realizar</button> </p>
+        			</div>
+        			<div class="ejercicios thumbnail">
+        				<p><strong>Titulo: </strong> Estructuras de repetición</p>
+        				<p><strong>Descripcion:</strong> Se aprendera a usar estructuras de repetición que se usan para recorrer listas o repetir ciertas acciones un determinado numero de veces o hasta que se cumpla una condición.</p>
+        				<p><strong>Dificultad:</strong> Medium <button id="estruc-rept" class="btn-success">Realizar</button></p>
+        			</div>
+        		</div>
+
+        		<div class="sb-ejer thumbnail col-md-6 col-sm-12">
+        			<div id="vari-tipos">
+        				<h3>Variables y tipos de Datos</h3>
+        				<p>Una de las cosas más llamativas de python es que el declarar una variable no necesitas especificar el tipo de dato y esto hace llamativo</p>
+        				<strong>Introducción:</strong>
+        				<p>En python declarar variables es la cosa más sencilla del mundo solo pones el nombre, igual y el valor.</p>
+        				<p>Al no necesitar declarar de manera explicita el tipo de dato a las varibles, al ingresar el valor python reconoce el tipo de acuerdo a como lo ingreses ej:</p>
+        				<ul>
+        					<li>nombre="Karen" <--- las comillas le indican que es String</li>
+        					<li>edad=22 <--- numeros directamente sin comillas son del tipo mumerico tal como int o float</li>
+        					<li>verdad=True <--- True o False para boolean</li>
+        					<li>nombres=["Karen","Jorge","Israel"] <--- Los corchetes indican array</li>
+        				</ul>
+        				<p>Para este ejercicio usted tambien debera saber ciertas cosas como print("hola") para mostrar en consola cualquier cosa e if(condicion):</p>
+
+        				<strong>Ejercicio:</strong>
+        				<p>Declara una variable llamada año_nacimiento y otra llamada año_actual en donde almacenaras los años respectivos, luego declara una variable llamada edad en donde calcularas la edad con las dos variables previas, luego si su edad es mayor igual a 18 mostrar un mensaje que diga usted es mayor de edad.</p>
+        				<input type="file" name="attachments[0][uploaded_data]">
+        				<button class="exito btn btn-success">Enviar</button>
+        			</div>
+        			<div id="est-ctrl">
+        				<h3>Estructuras de Control condicionales</h3>
+        				<p>En python las estructuras de control funcionan de manera muy parecida a la mayoria de lenguaje, con la unica diferencia de que se usan dos puntos en vez de llaves y su cuerpo esta definido con un espaciado diferente al resto.</p>
+        				<strong>Introducción:</strong>
+        				<p>La manera de usar las sentencias de control es con la palabra reservaba y la condicion</p>
+        				<p>Las sentencias existentes son</p>
+        				<ul>
+        					<li>if(condicion):</li>
+        					<li>if(condicion):...else:</li>
+        					<li>if(condicion):...elfi(condicion):</li>
+        				</ul>
+        				<p>Para este ejercicio usted tambien debera saber ciertas cosas como print("hola") para mostrar en consola </p>
+
+        				<strong>Ejercicio:</strong>
+        				<p>Declara una variable llamada año_nacimiento y otra llamada año_actual en donde almacenaras los años respectivos, luego declara una variable llamada edad en donde calcularas la edad con las dos variables previas, luego si su edad es mayor igual a 18 mostrar un mensaje que diga usted es mayor de edad y si es menor que 18 mostrar un mensaje que diga usted es menor de edad</p>
+        				<input type="file" name="attachments[0][uploaded_data]">
+        				<button class="exito btn btn-success">Enviar</button>
+        			</div>
+        			<div id="est-rep">
+        				<h3>Estructuras de Control iteradas</h3>
+        				<p>En python las estructuras de control funcionan de manera muy parecida a la mayoria de lenguaje, con la unica diferencia de que se usan dos puntos en vez de llaves y su cuerpo esta definido con un espaciado diferente al resto.</p>
+        				<strong>Introducción:</strong>
+        				<p>La manera de usar las sentencias de control es con la palabra reservaba y la condicion</p>
+        				<p>Las sentencias existentes son</p>
+        				<ul>
+        					<li>while(condicion):</li>
+        					<li>for item in arreglo:</li>
+        				</ul>
+        				<p>Para este ejercicio usted tambien debera saber ciertas cosas como print("hola") para mostrar en consola </p>
+        				<p>Tambien len(array) para obtener el tamaño de una lista</p>
+
+        				<strong>Ejercicio:</strong>
+        				<p>Esta vez usted creara una lista de objetos con atributos por ejemplo nombre, apellido y usara sentencia while y for para mostrar por pantalla dichos datos</p>
+        				<input type="file" name="attachments[0][uploaded_data]">
+        				<button class="exito btn btn-success">Enviar</button>
+        			</div>
+
+        			
+        		</div>
+        	</div>
+        </div>
+    </div>
+    <!--====================/SandBox======================-->
+    
+
+    <nav id="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014. Designed by <a href="https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira</a></p>
+            </div>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/sandbox-estudiante.js"></script>
+
+  </body>
+</html>
