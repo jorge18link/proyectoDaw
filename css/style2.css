@@ -56,3 +56,23 @@
 .tablaModal td{
 	font-size: 80%;
 }
+.navPeq{
+	float: right;
+}
+.contenido div{
+	border: 1px solid;
+	text-align: left;
+	padding: 20px;
+}
+
+.tituloSB h2{
+	line-height: 30px;
+}
+
+.contenido div button{
+	float: right;
+}
+
+#propios{
+	background-color: lightblue;
+}
