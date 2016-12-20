@@ -1,5 +1,6 @@
 
 function ocultarTodo(){
+	
 	$("#vari-tipos").hide();
 	$("#est-ctrl").hide();
 	$("#est-rep").hide();
@@ -13,10 +14,12 @@ $(document).ready(function(){
  		ocultarTodo();
  		$("#vari-tipos").show();
  	});
+
  	$("#estruc-ctrl").click(function(){
  		ocultarTodo();
  		$("#est-ctrl").show();
  	});
+ 	
  	$("#estruc-rept").click(function(){
  		ocultarTodo();
  		$("#est-rep").show();
