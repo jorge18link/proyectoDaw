@@ -9,8 +9,8 @@
         {
           "primero": "Material/materialfundamentos/diapositivas/01-Introduccion.pptx",
           "segundo": "Material/materialfundamentos/diapositivas/02-Datos_Variables_Operadores.pdf",
-          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Ejercicios-VariablesControl.pdf",
-          "cuatro": "http://entrenamiento-python-basico.readthedocs.io/es/latest/leccion3/",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Ejercicios/Ejercicios-VariablesControl.pdf",
+          "cuatro": "http://python-para-impacientes.blogspot.com/2016/02/variables-de-control-en-tkinter.html",
           "name1": "01 - Introduccion.pptx",
           "name2": "02 - Datos_Variables_Operadores.pdf",
           "ns": "1",
@@ -26,12 +26,12 @@
       "image": "img/descarga2.png",
       "recursos": [
         {
-          "primero": "Material/materialdefundamentos/diapositivas/03-Manejodetexto.pdf",
-          "segundo": "Materiales/materialfundamentos/diapositivas/04-Condicionales.pdf",
-          "tercero": "Material/materialdefundamentos/talleres-ejercicios-deberes/deber01.pdf",
-          "cuatro": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller2.1-IdentificarTipodeDatos.pdf",
-          "quinto": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller2.2-TiposdeDatos.pdf",
-          "sexto": "Taller3.1-EjerciciosCondicionales.pdf",
+          "primero": "Material/materialfundamentos/diapositivas/03-Manejodetexto.pdf",
+          "segundo": "Material/materialfundamentos/diapositivas/04-Condicionales.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Deber/deber01.pdf",
+          "cuatro": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller2.1-IdentificarTipodeDatos.pdf",
+          "quinto": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller2.2-TiposdeDatos.pdf",
+          "sexto": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller3.1-EjericiciosCondicionales.pdf",
           "name1": "03 - Manejodetexto.pdf",
           "name2": "04 - Condicionales.pdf",
           "ns": "2",
@@ -49,9 +49,9 @@
       "image": "img/descarga3.png",
       "recursos": [
         {
-          "primero": "Material/materialdefundamentos/diapositivas/05-Lazos.pdf",
+          "primero": "Material/materialfundamentos/diapositivas/05-Lazos.pdf",
           "segundo": " ",
-          "tercero": "Taller4.1-EstructurasdeControlIterativasyListas.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller4.1 Estructurasde ControlIterativasyListas.pdf",
           "cuatro": "https://www.pythonmania.net/es/2013/04/05/control-de-bucles-break-continue-y-pass/",
           "name1": "05 - Lazos.pdf",
           "ns3": "3",
@@ -67,10 +67,10 @@
       "image": "img/descarga4.png",
       "recursos": [
         {
-          "primero": "Material/materialdefundamentos/diapositivas/06-Listas.pptx",
+          "primero": "Material/materialfundamentos/diapositivas/06-Listas.pdf",
           "segundo": " ",
-          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/practica-strings-listas.pdf",
-          "cuatro": "Material/materualfundamentos/talleres-ejercicios-deberes/Talleres/talller4.2-ListasyStrings.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/c",
+          "cuatro": "Material/materIalfundamentos/talleres-ejercicios-deberes/Talleres/Taller4.2-ListasyStrings.pdf",
           "name1": "06 - Listas.pdf",
           "ns": "4",
           "extra1": "practica de String",
@@ -87,10 +87,10 @@
         {
           "primero": " ",
           "segundo": " ",
-          "tercero": "Materiales/materialfundamentos/talleres-ejercicios-deberes/TallerdeListas.pdf",
-          "cuatro": "Ejercicios-Listas.pdf",
-          "quinto": "Taller4.2-ListasyStrings.pdf",
-          "sexto": "Taller4.3-Refuerzo.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/TallerdeListas.pdf",
+          "cuatro": "Material/materialfundamentos/talleres-ejercicios-deberes/Ejercicios/Ejercicios-Listas.pdf",
+          "quinto": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller4.2-ListasyStrings.pdf",
+          "sexto": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller4.3-Refuerzo.pdf",
           "ns": "5",
           "extra1": "ejercicios de lista",
           "extra2": "taller de lista",
@@ -105,9 +105,9 @@
       "image": "img/descarga6.jpg",
       "recursos": [
         {
-          "primero": "Material/materialdefundamentos/diapositivas/07-Arreglos.pptx",
+          "primero": "Material/materialfundamentos/diapositivas/07-Arreglos.pptx",
           "segundo": " ",
-          "tercero": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller5.1Arreglosn-dimensionales.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller5.1 Arreglosn-dimensionales.pdf",
           "cuatro": "http://progra.usm.cl/apunte/materia/arreglos-2d.html",
           "name1": "07 - Arreglos.pdf",
           "ns": "6",
@@ -125,7 +125,7 @@
         {
           "primero": " ",
           "segundo": " ",
-          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller5.2ArreglosyMatrices.pdf",
+          "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller 5.2ArreglosyMatrices.pdf",
           "ns": "7",
           "extra1": "taller de arreglos y matrices"
         }
