@@ -1,5 +1,5 @@
 /* ==============================================
-    Funciones para Validación de Usuarios*/
+    CON CAMBIOSFunciones para Validación de Usuarios*/
 
 function check2Perfil(form){
   var xhttp = new XMLHttpRequest(); 
