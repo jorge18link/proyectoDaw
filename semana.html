@@ -147,7 +147,14 @@
             </div>
             <a href="#" class="col-md-12 WD{{x.numerodelasemana}}" data-toogle="collapse"><i>Recursos <span class="glyphicon glyphicon-menu-down"></span></i></a>
             <div class="recu col-md-12" ng-repeat="z in x.recursos" id="D{{x.numerodelasemana}}">
-            
+                  <h3>Diapositivas</h3>
+              <a href="{{z.primero}}"><p>{{z.name1}}</p></a>
+              <a href="{{z.segundo}}"><p>{{z.name2}}</p></a>
+              <h3>Taller y practica</h3>
+              <a ng-if="z.tercero!==' '" href="{{z.tercero}}" class="link"><p class="p">{{z.extra1}}</p></a>
+              <a ng-if="z.cuatro!==' '" href="{{z.cuatro}}" class="link"><p class="p">{{z.extra2}}</p></a>
+              <a ng-if="z.quinto!==' '" href="{{z.quinto}}" class="link"><p class="p">{{z.extra3}}<p></a>
+              <a ng-if="z.sexto!==' '" href="{{z.sexto}}" class="link"><p class="p">{{z.extra4}}</p></a>
             </div>            
           
         </div>
