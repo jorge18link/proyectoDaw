@@ -3,7 +3,7 @@ function boton(){
     titulo= $("#titulo").val();
     fecha= $("#fecha").val();
     descr= $("#dp").val();
-    var temp=$("<div>").append(($("<strong>").text("Titulo: ")),($("<p>").text(titulo)),($("<strong>").text("fecha: ")),($("<p>").text(fecha)),($("<strong>").text("Descripcion: ")),($("<p>").text(descr)));
+    var temp=$("<div>").append($("<strong>").text("Profesor"), $("<p>").text("Marco Calderon") , $("<strong>").text("Titulo:"),$("<p>").text(titulo),($("<strong>").text("fecha: ")),($("<p>").text(fecha)),($("<strong>").text("Descripcion: ")),($("<p>").text(descr)));
     $(".contenedor").append(temp);
     $(".contenedor").append($("<hr>"))
     $("#titulo").val("");
@@ -73,7 +73,5 @@ $(document).ready(function() {
                 }
             }
     });
-    var contenedor= $("<div>",{"class":"thumbnail contenedor"});
-    $(".allofthem").append(contenedor);
     boton();
 });
