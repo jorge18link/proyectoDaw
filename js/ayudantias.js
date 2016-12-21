@@ -35,7 +35,6 @@ function initMap(aula,horario,latitud,longitud) {
 
 function agregarAyudantes() {
     var url ="json/ayudantes.json"
-    
     $.getJSON(url, function(resp){
         var ayudantes = resp.Ayudantes;
         initMap();
@@ -80,10 +79,6 @@ function agregarAyudantes() {
     });
 }
 
-
-
-
 $(document).ready(function(){
     agregarAyudantes();
-
 });
