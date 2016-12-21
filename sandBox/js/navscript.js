@@ -20,12 +20,22 @@ function ocultar(d){
 
 }
 
-function esconderTabla(Ntabla){
-    if(Ntabla==2){
-        $("#propios").hide();
+function mostrarTabla(N){
+    if (N==1) {
+        $("#comment1").show();
     }
+    if(N==2){
+        $("#visible1").show();
+    }
+}
+
+
+function esconderTabla(Ntabla){
     if (Ntabla==1) {
-        $("#con").hide();
+        $("#comment1").hide();
+    }
+    if(Ntabla==2){
+        $("#visible1").hide();
     }
 }
 
@@ -92,16 +102,19 @@ function botonesPropios(){
 
 function guardar(){
     $("#g1").click(function(){
-        
+        text=$("#comment1").val()
+        $(".visible1").append(text);
+        esconderTabla(1);
+
     })
 }
 
 
 $(document).ready(
     function(){
-        $(".navi li").click(
+        $("·sidebar.nav li").click(
         function(){
-            seleccionado=$(".navi li");
+            seleccionado=$(".nav li");
             seleccionado.removeClass("active");
             $(this).addClass('active');
         })
@@ -121,6 +134,9 @@ $(document).ready(
             esconderTabla(2);
             $("#con").show();
         })
+        mostrarTabla(1)
+        guardar();
+        mostrarTabla(2);
 
 });
 
