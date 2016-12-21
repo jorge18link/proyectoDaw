@@ -57,7 +57,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">FAST-CODING</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,66 +67,12 @@
             <li><a href="equipo.html" class="page-scroll">Equipo</a></li>
             <li><a href="semana.html" class="page-scroll">Semana a Semana</a></li>
             <li><a href="ayudantias.html" class="page-scroll">Ayudantías</a></li>
-            <li><a href="sandbox.html" class="page-scroll">Sandbox</a></li>
-            <li><a href="proyectos.html" class="page-scroll">Proyectos</a></li>
-            <li><a class="page-scroll" data-toggle="modal" data-target="#login-modal">Iniciar Sesión</a></li>
-            <li></li>
+            <li><a href="login-sandbox.html" class="page-scroll">Sandbox</a></li>
+            <li><a href="login-proyectos.html" class="page-scroll">Proyectos</a></li>
+            <li><a href="login.html" class="page-scroll">Iniciar Sesión</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-      
-      <!-- Modal -->
-      <div class="modal fade" id="login-modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-      <!-- Modal content-->
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Inicia Sesión en FAST-CODING</h4>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <div class="well">
-                          <form name="loginform" id="loginForm" method="POST" novalidate="novalidate">
-                              <div class="form-group">
-                                  <label for="username" class="control-label">Username</label>
-                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <label for="password" class="control-label">Password</label>
-                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                              <div class="checkbox">
-                                  <label>
-                                      <input type="checkbox" name="remember" id="remember"> Recordarme
-                                  </label><br>
-                              </div>
-                              <button type="submit" onclick="validate();" class="btn btn-success btn-block">Iniciar Sesión</button>
-                              <a href="/forgot/" class="btn btn-default btn-block">Ayuda</a>
-                          </form>
-                      </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                      <p class="lead">Registrate ahora <span class="text-success">GRATIS</span></p>
-                      <ul class="list-unstyled" style="line-height: 2">
-                          <li><span class="fa fa-check text-success"></span> Comparte tus conocimientos</li>
-                          <li><span class="fa fa-check text-success"></span> Practica ejercicios</li>
-                          <li><span class="fa fa-check text-success"></span> Guarda favoritos</li>
-                          <li><span class="fa fa-check text-success"></span> Planificación del curso</li>
-                          <li><span class="fa fa-check text-success"></span> Obtén puntos adicionales</li>
-                          <li><a href="/read-more/"><u>Leer más</u></a></li>
-                      </ul>
-                      <p><a href="/new-customer/" class="btn btn-info btn-block">Si porfavor, Registrar ahora!</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-
     </nav>
 
 
@@ -136,11 +81,9 @@
     <div id="tf-home" class="text-center">
         <div class="overlay">
             <div class="content">
-
-                <h1>Curso<span id="typed" class="typed"></span></h1>
-                <!---<h1>Bienvenido a <strong><span class="color">Código Fácil</span></strong></h1>-->
-                <br><p class="lead">“El <b>programar</b> es un </b>arte, pues creas <b>algo de la nada</b>.”</p><p>Mark Zuckerberg.</p>
-                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+                <h1>Aprende más sobre el <strong><span class="color">Curso</span></strong></h1>
+                <p class="lead">Encuentra aquí toda la información relevante sobre el curso</p><p>Da click en el botón para bajar</p>
+                <a href="#tf-ayudantias" class="fa fa-angle-down page-scroll"></a>
             </div>
         </div>
     </div>
@@ -503,6 +446,8 @@
     </div>
 
 
+    <!-- Footer Section
+    ==========================================-->
     <nav id="footer">
         <div class="container">
             <div class="pull-left fnav">
@@ -510,10 +455,10 @@
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/FIEC01/?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://mail.espol.edu.ec"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="http://mail.fiec.espol.edu.ec"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://twitter.com/fiec_espol"><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
