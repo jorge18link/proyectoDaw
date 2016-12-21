@@ -54,10 +54,9 @@ function check2Sandbox(form){
           break;
         }
       }
-      if (boolean === true){window.location.replace('sandBox/index.html');} //como profesor al sandbox
+      if (boolean === true){window.location.replace('sandBox/index - Profesor.html');} //como profesor al sandbox
     }
   };
-
   xhttp.open("GET", "json/profesores.json");
   xhttp.send();
 
@@ -71,7 +70,7 @@ function check2Sandbox(form){
           break;
         }
       }
-      if (boolean2 === true){window.location.replace('sandbox-estudiante.html');} //como estudiante al sandbox
+      if (boolean2 === true){window.location.replace('sandBox/index.html');} //como estudiante al sandbox
     }
   };
 
