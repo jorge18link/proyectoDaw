@@ -38,18 +38,41 @@
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <style type="text/css">
        
-       .allofthis{
+      .img-responsive{
+        border: 3px solid orange;
+      }
 
-          border: 1px solid orange;
-          background-color: rgba(0,0,0,0.4);
-       }
-
-       #tf-about{
-        background-image: url(img/04.jpg);
-       }
-       .p{
+      .allofthis{
+        padding-top: 2.5rem;
+        opacity:30%;
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        background-color: rgba(0,0,0,0.6); 
+      }
+      .p{
+        font-weight: bold;
+      }
+        #tf-about{
+        background-image: url("img/00.png");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;  
+      }
+      
+      .allofthis strong{
+           color:white;
+      }
+      .recu h3{
         color:white;
-       }
+      }
+      .allofthis p {
+        color:#FFCD28;
+        font-weight: normal;
+      }
+      .allofthis i{
+        color:white;
+        font-size: 2rem;
+      }
     </style>
       
 
@@ -163,39 +186,38 @@
     <div id="tf-about" ng-app="myA" ng-controller="control">
       <div class="container">
         <div class="row ContSas">
-          <div class="section-title center">
-             <h2 class="text-center">Primer Parcial <strong> Weeks</strong></h2>
-              <div class="line">
-                <hr>
-              </div>
-              <div  class="col-md-6 allofthis" ng-repeat=" x in todos">
-                      <div class="col-md-2">
-                      <img ng-src="{{x.image}}"" class="img-responsive img-circle Thumbnail">
-                      </div>
-                      <div class="col-md-10">
-                      <p class="p">Primera Clase: {{x.PrimeraClase}}</p>
-                      <p class="p">Segunda Clase: {{x.SegundaClase}}</p>
-                      </div>
-                      <a href="#D{{x.numerodelasemana}}" class="col-md-12" data-toogle="collapse"><i>Recursos <span class="glyphicon glyphicon-menu-down"></span></i></a>
-                      <div  id="D{{x.numerodelasemana}}" class="collapse in">
-                               <div class="col-md-6" ng-repeat="z in x.recursos">
-                                    <h3>Diapositivas</h3>
-                                    <a href="{{z.primero}}"><p class="p">Diapositiva1</p></a>
-                                    <a href="{{z.segundo}}"><p>Diapositiva2</p></a>
-                                    <h3>Taller y practica</h3>
-                                    <a ng-if="z.tercero!==' '" href="{{z.tercero}}"><p class="p">Extra</p></a>
-                                    <a ng-if="z.cuatro!==' '" href="z.cuatro}}"><p class="p">Extra</p></a>
-                                    <a ng-if="z.quinto!==' '" href="{{z.quinto}}"><p class="p">Extra</p></a>
-                                    <a ng-if="z.sexto!==' '" href="{{z.sexto}}"><p class="p">Extra</p></a>
-
-                               </div>            
-                      </div>
-
-              </div>
+          <div class="section-title center prueba">
+            <h2 class="text-center">Primer Parcial <strong> Weeks</strong></h2>
+            <div class="line">
+            <hr>
+            </div>
           </div>
-        </div>   
-      </div>
+            <div  class="col-md-12 allofthis thumbnail" ng-repeat=" x in todos">
+              <div class="col-md-2">
+              <img ng-src="{{x.image}}"" class="img-responsive Thumbnail">
+            </div>
+            <div class="col-md-10">
+              <strong>Primera Clase:</strong>
+              <p>{{x.PrimeraClase}}</p>
+              <strong>Segunda Clase</strong>
+              <p>{{x.SegundaClase}}</p>
+            </div>
+            <a href="#" class="col-md-12 WD{{x.numerodelasemana}}" data-toogle="collapse"><i>Recursos <span class="glyphicon glyphicon-menu-down"></span></i></a>
+            <div class="recu col-md-12" ng-repeat="z in x.recursos" id="D{{x.numerodelasemana}}">
+              <h3>Diapositivas</h3>
+              <a href="{{z.primero}}"><p>{{z.name1}}</p></a>
+              <a href="{{z.segundo}}"><p>{{z.name2}}</p></a>
+              <h3>Taller y practica</h3>
+              <a ng-if="z.tercero!==' '" href="{{z.tercero}}"><p class="p">{{z.extra1}}</p></a>
+              <a ng-if="z.cuatro!==' '" href="z.cuatro}}"><p class="p">{{z.extra2}}</p></a>
+              <a ng-if="z.quinto!==' '" href="{{z.quinto}}"><p class="p">{{z.extra3}}<p></a>
+              <a ng-if="z.sexto!==' '" href="{{z.sexto}}"><p class="p">{{z.extra4}}</p></a>
+            </div>            
+          
+        </div>
+      </div>   
     </div>
+  </div>
 
 
      <nav id="footer">
@@ -232,6 +254,7 @@
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/sasprueba.js"></script>
+    <script type="text/javascript" src="js/wtw.js"></script>
 
   </body>
 </html>

@@ -13,7 +13,9 @@
           "cuatro": "http://entrenamiento-python-basico.readthedocs.io/es/latest/leccion3/",
           "name1": "01 - Introduccion.pptx",
           "name2": "02 - Datos_Variables_Operadores.pdf",
-          "ns": "1"
+          "ns": "1",
+          "extra1": "VariablesControl.pdf",
+          "extra2": "Informacion Sobre Variables de control"
         }
       ]
     },
@@ -25,14 +27,18 @@
       "recursos": [
         {
           "primero": "Material/materialdefundamentos/diapositivas/03-Manejodetexto.pdf",
-          "segundo": "Material/materialfundamentos/diapositivas/04-Condicionales.pdf",
+          "segundo": "Materiales/materialfundamentos/diapositivas/04-Condicionales.pdf",
           "tercero": "Material/materialdefundamentos/talleres-ejercicios-deberes/deber01.pdf",
           "cuatro": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller2.1-IdentificarTipodeDatos.pdf",
           "quinto": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller2.2-TiposdeDatos.pdf",
           "sexto": "Taller3.1-EjerciciosCondicionales.pdf",
           "name1": "03 - Manejodetexto.pdf",
           "name2": "04 - Condicionales.pdf",
-          "ns": "2"
+          "ns": "2",
+          "extra1": "deber sobre manejo de texto",
+          "extra2": "taller identificar tipo de dato",
+          "extra3": "taller tipo de datos",
+          "extra4": "taller ejercicio de condicionales"
         }
       ]
     },
@@ -48,7 +54,9 @@
           "tercero": "Taller4.1-EstructurasdeControlIterativasyListas.pdf",
           "cuatro": "https://www.pythonmania.net/es/2013/04/05/control-de-bucles-break-continue-y-pass/",
           "name1": "05 - Lazos.pdf",
-          "ns3": "3"
+          "ns3": "3",
+          "extra1": "taller estructuras de control",
+          "extra2": "informacion sobre control de bucles"
         }
       ]
     },
@@ -64,7 +72,9 @@
           "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/practica-strings-listas.pdf",
           "cuatro": "Material/materualfundamentos/talleres-ejercicios-deberes/Talleres/talller4.2-ListasyStrings.pdf",
           "name1": "06 - Listas.pdf",
-          "ns": "4"
+          "ns": "4",
+          "extra1": "practica de String",
+          "extra2": "Taller de listas"
         }
       ]
     },
@@ -81,7 +91,10 @@
           "cuatro": "Ejercicios-Listas.pdf",
           "quinto": "Taller4.2-ListasyStrings.pdf",
           "sexto": "Taller4.3-Refuerzo.pdf",
-          "ns": "5"
+          "ns": "5",
+          "extra1": "ejercicios de lista",
+          "extra2": "taller de lista",
+          "extra3": "taller de refuerzo"
         }
       ]
     },
@@ -97,7 +110,9 @@
           "tercero": "Material/materialdefundamentos/talleres-ejercicios-deberes/Talleres/Taller5.1Arreglosn-dimensionales.pdf",
           "cuatro": "http://progra.usm.cl/apunte/materia/arreglos-2d.html",
           "name1": "07 - Arreglos.pdf",
-          "ns": "6"
+          "ns": "6",
+          "extra1": "taller de arreglo",
+          "extra2": "informacion de arreglos"
         }
       ]
     },
@@ -111,7 +126,8 @@
           "primero": " ",
           "segundo": " ",
           "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller5.2ArreglosyMatrices.pdf",
-          "ns": "7"
+          "ns": "7",
+          "extra1": "taller de arreglos y matrices"
         }
       ]
     },
@@ -125,7 +141,8 @@
           "primero": " ",
           "segundo": " ",
           "tercero": "Material/materialfundamentos/talleres-ejercicios-deberes/Talleres/Taller5.3Matrices.pdf",
-          "ns": "8"
+          "ns": "8",
+          "extra1": "taller de matrices"
         }
       ]
     }
