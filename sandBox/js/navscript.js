@@ -90,6 +90,13 @@ function botonesPropios(){
         });
 }
 
+function guardar(){
+    $("#g1").click(function(){
+        
+    })
+}
+
+
 $(document).ready(
     function(){
         $(".navi li").click(
@@ -114,5 +121,6 @@ $(document).ready(
             esconderTabla(2);
             $("#con").show();
         })
+
 });
 
