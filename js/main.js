@@ -54,7 +54,7 @@ function check2Sandbox(form){
           break;
         }
       }
-      if (boolean === true){window.location.replace('sandbox.html');} //como profesor al sandbox
+      if (boolean === true){window.location.replace('sandBox/index.html');} //como profesor al sandbox
     }
   };
 
