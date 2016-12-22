@@ -1,7 +1,53 @@
 
-
 $(document).ready(function(){
-   
-   $('body').find($('strong')).hide();
+   	console.log('fedwe');
+	$('body').on('click','#WD1', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D1').removeClass("collapse");
+      	$('#D1').addClass("collapse in")
+	});
+	$('body').on('click','#WD2', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D2').removeClass("collapse");
+      	$('#D2').addClass("collapse in")
+	}); 
+	$('body').on('click','#WD3', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D3').removeClass("collapse");
+      	$('#D3').addClass("collapse in")
+	}); 
+	$('body').on('click','#WD4', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D4').removeClass("collapse");
+      	$('#D4').addClass("collapse in")
+	}); 
+	$('body').on('click','#WD5', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D5').removeClass("collapse");
+      	$('#D5').addClass("collapse in")
+	}); 
+	$('body').on('click','#WD6', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D6').removeClass("collapse");
+      	$('#D6').addClass("collapse in")
+	}); 
+	$('body').on('click','#WD1', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D1').removeClass("collapse");
+      	$('#D1').addClass("collapse in")
+	}); 
+	$('body').on('click','#WD1', function(){
+      	$('.recu').removeClass("collapse in");
+      	$('.recu').addClass("collapse")
+      	$('#D1').removeClass("collapse");
+      	$('#D1').addClass("collapse in")
+	});  
  
-});
+});		
