@@ -6,7 +6,6 @@ function boton(){
         var temp=$("<div>",{"class":"thumbnail pequeno col-md-5"}).append($("<strong>").text("Profesor"), $("<p>").text("Marco Calderon") , $("<strong>").text("Título:"),$("<p>").text(titulo),($("<strong>").text("Fecha: ")),($("<p>").text(fecha)),($("<strong>").text("Descripción: ")),($("<p>").text(descr)),($("<span>",{"class":"glyphicon glyphicon-file"})));
         $(temp).append($("<p>").text("Archivo.pdf"));
         $(".contenedor").append(temp);
-        $(".contenedor").append($("<hr>"))
         $("#titulo").val("");
         $("#fecha").val("");
         $("#dp").val("");
