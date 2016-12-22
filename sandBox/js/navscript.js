@@ -33,9 +33,11 @@ function mostrarTabla(N){
 function esconderTabla(Ntabla){
     if (Ntabla==1) {
         $("#comment1").hide();
+        $("#comment2").hide();
     }
     if(Ntabla==2){
         $("#visible1").hide();
+        $("#visible2").hide();
     }
 }
 
@@ -104,7 +106,15 @@ function guardar(){
     $("#g1").click(function(){
         text=$("#comment1").val()
         $(".visible1").append(text);
-        esconderTabla(1);
+        esconderTabla(2);
+        $("#visible1").show()
+
+    })
+    $("#g2").click(function(){
+        text=$("#comment2").val()
+        $(".visible1").append(text);
+        esconderTabla(2);
+        $("#visible2").show()
 
     })
 }
@@ -112,10 +122,13 @@ function guardar(){
 function esconderEt(num){
     if (num==1) {
         $("#mostrar1").hide();
+        $("#mostrar2").hide();
     }
     if (num==2) {
         $("#et1").hide();
         $("#esconde1").hide();
+        $("#et2").hide();
+        $("#esconde2").hide();
     }
     
 }
@@ -123,6 +136,10 @@ function esconderEt(num){
 function editar(){
     $('#editar1').click(function(){
         $("#mostrar1").show();
+        esconderEt(2)
+    })
+    $('#editar2').click(function(){
+        $("#mostrar2").show();
         esconderEt(2)
     })
 }

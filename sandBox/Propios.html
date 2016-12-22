@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sanbox - Profesores</title>
+
 <style type="text/css">
 	.sb-ejer{
 		background-color: rgba(0,0,0,0.3);
@@ -67,11 +68,10 @@
 				<a class="navbar-brand" href="#"><span>Sandbox</span>Profesores</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Marco Antonio Calderón <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
-							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
-							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+							<li><a href="perfil.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Ver mi perfil</a></li>
+							<li><a href="../index.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Cerrar Sesión</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -81,11 +81,13 @@
 	</nav>
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<h2>Talleres</h2>
+		<h2 style="margin-top: 17px; padding-left: 10px;">Menú Sandbox</h2>
 		<ul class="nav menu">
 			<li><a href="index - Profesor.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Todos</a></li>
 			<li class="active"><a href="Propios.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Propios</a></li>
 			<li><a href="Crear nuevo.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Crear Nuevo</a></li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="perfil.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Perfil </a></li>
 		</ul>
 
 	</div><!--/.sidebar-->
@@ -139,7 +141,7 @@
 							    </div>
 							    <div class="orden1">
 								    <label for="comment1">Ejercicio:</label>
-								    <textarea class="form-control" rows="5" id="comment1">Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programadebe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguidoloco)</textarea>
+								    <textarea class="form-control" rows="5" id="comment1">Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programadebe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguido)</textarea>
 								 </div>
 								 <button class="btn-success" id="g1">Guardar</button>
 							  	</form>
@@ -149,8 +151,65 @@
 								<p><b>Crear una lista de compras</b></p>
 		     				 	<p><b>Ejercicio 1</b></p>
 		     				 	<p>
-		     				 	Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programa debe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguido </p><button id="editar1">editar</button>
+		     				 	Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programa debe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguido </p>
+		     				 	<button id="editar1">editar</button>
 		     				</div>
+		     				<div id="visible1" style="color: black"></div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="segundoD">
+			<div class="col-lg-8 ej2">
+				<div class="panel panel-orange panel-widget ">
+					<div class="row no-padding">
+
+						<div class="col-sm-3 col-lg-2 widget-left">
+							<svg class="glyph stroked blank document"><use xlink:href="#stroked-blank-document"></use></svg>
+						</div>
+
+						<div class="col-lg-10 widget-right">
+							<div id="et2">
+								<p><b>Titulo: </b>Validar numero de cedula</p>
+								<p><b>Descripcion: </b>Elaborar un programa que simule una lista de compras</p>
+								<p><b>Dificultad: </b>Easy</p>
+								<button id="t2" class="btn btn-info panel-blue">Ver</button>
+							</div>
+							
+							<div id="mostrar2">
+								<form>
+							    <div class="titulo2">
+							      <label for="comment2">Titulo:</label>
+							      <textarea class="form-control" rows="2" id="tit2">Validar numero de cedula</textarea>
+							    </div>
+							    <div class="descripcion2">
+							      <label for="comment1">Descripcion:</label>
+							      <textarea class="form-control" rows="2" id="desc2">Elaborar un programa que simule una lista de compras</textarea>
+							    </div>
+							    <div class="Dificultad2">
+							      <label for="comment1">Dificultad:</label>
+							      <textarea class="form-control" rows="2" id="dif2">Hard</textarea>
+							    </div>
+							    <div class="orden2">
+								    <label for="comment1">Ejercicio:</label>
+								    <textarea class="form-control" rows="5" id="comment2">Crear un programa que valide cada digito de una cedula. El Programadebe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguido)</textarea>
+								 </div>
+								 <button class="btn-success" id="g2">Guardar</button>
+							  	</form>
+							</div>
+
+							<div id="esconde2" class="widget-right">
+								<p><b>Crear una lista de compras</b></p>
+		     				 	<p><b>Ejercicio 1</b></p>
+		     				 	<p>
+		     				 	Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programa debe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguido </p>
+		     				 	<button id="editar2">editar</button>
+		     				</div>
+		     				<div id="visible2" style="color: black"></div>
 						</div>
 
 						
