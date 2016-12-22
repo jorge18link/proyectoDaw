@@ -15,7 +15,7 @@ function check2Perfil(form){
           break;
         }
       }
-      if (boolean === true){window.location.replace('perfil.html');} //como profesor al perfil
+      if (boolean === true){window.location.replace('sandbox/perfil.html');} //como profesor al perfil
     }
   };
 
@@ -32,7 +32,7 @@ function check2Perfil(form){
           break;
         }
       }
-      if (boolean2 === true){window.location.replace('perfil-estudiante.html');} //como estudiante al perfil
+      if (boolean2 === true){window.location.replace('sandbox/perfil-estudiante.html');} //como estudiante al perfil
     }
   };
 
