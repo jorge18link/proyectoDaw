@@ -1,16 +1,18 @@
 function boton(){
-   $(".boton").click(function(){
+ $(".boton").click(function(){
     titulo= $("#titulo").val();
     fecha= $("#fecha").val();
     descr= $("#dp").val();
-    var temp=$("<div>").append($("<strong>").text("Profesor"), $("<p>").text("Marco Calderon") , $("<strong>").text("Titulo:"),$("<p>").text(titulo),($("<strong>").text("fecha: ")),($("<p>").text(fecha)),($("<strong>").text("Descripcion: ")),($("<p>").text(descr)));
-    $(".contenedor").append(temp);
-    $(".contenedor").append($("<hr>"))
-    $("#titulo").val("");
-    $("#fecha").val("");
-    $("#dp").val("");
-   });
-   
+        var temp=$("<div>",{"class":"thumbnail pequeno col-md-5"}).append($("<strong>").text("Profesor"), $("<p>").text("Marco Calderon") , $("<strong>").text("Título:"),$("<p>").text(titulo),($("<strong>").text("Fecha: ")),($("<p>").text(fecha)),($("<strong>").text("Descripción: ")),($("<p>").text(descr)),($("<span>",{"class":"glyphicon glyphicon-file"})));
+        $(temp).append($("<p>").text("Archivo.pdf"));
+        $(".contenedor").append(temp);
+        $(".contenedor").append($("<hr>"))
+        $("#titulo").val("");
+        $("#fecha").val("");
+        $("#dp").val("");
+ 
+});
+
 }
 
 

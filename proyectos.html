@@ -49,10 +49,11 @@
         color: #cfcfcf;
       }
       .well{
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(36, 138, 216, 0.7); 
+
       }
       label{
-        color:orange;
+        color:white;
         font-size: 1em;
       } 
       legend{
@@ -63,11 +64,30 @@
         font-size: 1.5rem;
       }
       .contenedor p{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color:white;
       }
       .contenedor{
-      background-color: rgba(0,0,0,0.7);  
+         
+                 background-color: #000066; 
+         padding: 2vh;   
+      }
+
+      .pequeno p{
+        color:black;
+      }
+      .pequeno{
+               background-color: #87CEFA; 
+              border-radius: 30px;
+              padding-left: 20px;
+              margin-left: 5vh;
+              border:2px solid white; 
+      }
+      .pequeno strong{
+        color:white;
+      }
+      hr{
+        font-size:50px;
       }
     </style>
   </head>
@@ -107,12 +127,12 @@
     ==========================================-->
     <div id="tf-about">
        <div class="overlay"> 
-        <div class="container">
-             <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+        <div class="container">6
+             <form class="well form-horizontal" action="javascript:alert( 'success!' );"   id="contact_form">
                 <fieldset>
                     <legend>Proyecto</legend>
                     <div class="form-group">
-                      <label class="col-md-4 control-label">Titulo</label> 
+                      <label class="col-md-4 control-label">Título</label> 
                       <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
@@ -132,7 +152,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-md-4 control-label">Project Description</label>
+                      <label class="col-md-4 control-label">Descripción</label>
                       <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -150,7 +170,7 @@
                     <div class="form-group">
                       <label class="col-md-4 control-label"></label>
                       <div class="col-md-4">
-                        <button  class="btn btn-warning boton" >Send <span class="glyphicon glyphicon-send"></span></button>
+                        <button  class="btn btn-warning boton" type="submit">Send <span class="glyphicon glyphicon-send"></span></button>
                       </div>
                     </div>
 
@@ -160,30 +180,33 @@
                <div class="section-title center">
                 <h2><b>Proyectos Agregados</b></h2>
               </div>
-              <div class="contenedor thumbnail">
-                <div>
-                  <strong>profesor</strong>
+              <div class="contenedor thumbnail col-md-12">
+                <div class="thumbnail pequeno col-md-5 col-md-offset-1">
+                  <strong>Profesor: </strong>
                   <p>Marco Calderon</p>
-                  <strong>titulo: </strong>
+                  <strong>Título: </strong>
                   <p>Pacman</p>
-                  <strong>Fecha:</strong>
+                  <strong>Fecha: </strong>
                   <p>30/12/2016</p>
-                  <strong>Descripcion</strong>
+                  <strong>Descripción: </strong>
                   <p>El estudiante realizara el famoso juego de pacman</p>
+                  <span class="glyphicon glyphicon-file"><p>Archivo.pdf</p></span>
                 </div>
-                <hr>
-                <div>
-                  <strong>profesor</strong>
+               
+                <div class="thumbnail pequeno col-md-5">
+                  <strong>Profesor: </strong>
                   <p>Marco Calderon</p>
-                  <strong>titulo: </strong>
+                  <strong>Título: </strong>
                   <p>Buscamina</p>
-                  <strong>Fecha:</strong>
+                  <strong>Fecha: </strong>
                   <p>01/01/2017</p>
-                  <strong>Descripcion</strong>
+                  <strong>Descripción: </strong>
                   <p>El estudiante realizara el famoso juego de buscaminas</p>
-                </div>
-                <hr>
+                  
+                  <span class="glyphicon glyphicon-file">  <p>Archivo.pdf</p></span>
                 
+                </div>
+            
               </div>
             </div>
         </div>
@@ -216,6 +239,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed
     ================================================== -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script src="js/owl.carousel.js"></script>
@@ -225,7 +249,7 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    
     <script type="text/javascript" src="js/form.js"></script>
   </body>
 </html>
