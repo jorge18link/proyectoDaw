@@ -109,6 +109,23 @@ function guardar(){
     })
 }
 
+function esconderEt(num){
+    if (num==1) {
+        $("#mostrar1").hide();
+    }
+    if (num==2) {
+        $("#et1").hide();
+        $("#esconde1").hide();
+    }
+    
+}
+
+function editar(){
+    $('#editar1').click(function(){
+        $("#mostrar1").show();
+        esconderEt(2)
+    })
+}
 
 $(document).ready(
     function(){
@@ -137,6 +154,8 @@ $(document).ready(
         mostrarTabla(1)
         guardar();
         mostrarTabla(2);
+        
+        esconderEt(1);
+        editar();
 
 });
-

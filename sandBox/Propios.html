@@ -4,10 +4,45 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sanbox - Profesores</title>
+<style type="text/css">
+	.sb-ejer{
+		background-color: rgba(0,0,0,0.3);
+	}
+	.sb-ejer h3{
+		color:orange;
+	}
+
+	.sb-desc{
+		padding-top: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+		overflow-y:scroll;
+		height: 56vh;
+	}
+	
+
+	#algo{
+		background-color: rgba(255,255,255,0.4);
+	}
+
+	.ejercicios p{
+		color: black;
+		font-size: large;
+	}
+
+	#body-pan{
+		background-color: #9BD0F5;
+	}
+	#pane-techo{
+		background-color: #5094C4;
+		color: white;
+	}
+
+</style>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
+<link href="css/styles2.css" rel="stylesheet">
 
 <!--Icons-->
 <script src="js/lumino.glyphs.js"></script>
@@ -32,10 +67,11 @@
 				<a class="navbar-brand" href="#"><span>Sandbox</span>Profesores</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Marco Antonio Calderón <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="perfil.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Ver mi perfil</a></li>
-							<li><a href="../index.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Cerrar Sesión</a></li>
+							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
+							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
+							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -45,13 +81,11 @@
 	</nav>
 		
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-		<h2 style="margin-top: 17px; padding-left: 10px;">Menú Sandbox</h2>
+		<h2>Talleres</h2>
 		<ul class="nav menu">
 			<li><a href="index - Profesor.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Todos</a></li>
 			<li class="active"><a href="Propios.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Propios</a></li>
 			<li><a href="Crear nuevo.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Crear Nuevo</a></li>
-			<li role="presentation" class="divider"></li>
-			<li><a href="perfil.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Perfil </a></li>
 		</ul>
 
 	</div><!--/.sidebar-->
@@ -62,17 +96,70 @@
 				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
 				<li class="active">Icons</li>
 			</ol>
-		</div><!--/.row-->
+		</div>
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Sus talleres</h1>
+				<h1 class="page-header">Propios</h1>
 			</div>
-		</div><!--/.row-->
+		</div>
 			
 		
 		<!-- talleres -->
 		<div class="primerD">
+			<div class="col-lg-8 ej1">
+				<div class="panel panel-orange panel-widget ">
+					<div class="row no-padding">
+
+						<div class="col-sm-3 col-lg-2 widget-left">
+							<svg class="glyph stroked blank document"><use xlink:href="#stroked-blank-document"></use></svg>
+						</div>
+
+						<div class="col-lg-10 widget-right">
+							<div id="et1">
+								<p><b>Titulo: </b>Crear una lista de compras</p>
+								<p><b>Descripcion: </b>Elaborar un programa que simule una lista de compras</p>
+								<p><b>Dificultad: </b>Easy</p>
+								<button id="t1" class="btn btn-info panel-blue">Ver</button>
+							</div>
+							
+							<div id="mostrar1">
+								<form>
+							    <div class="titulo1">
+							      <label for="comment1">Titulo:</label>
+							      <textarea class="form-control" rows="2" id="tit1">Crear una lista de compras</textarea>
+							    </div>
+							    <div class="descripcion1">
+							      <label for="comment1">Descripcion:</label>
+							      <textarea class="form-control" rows="2" id="desc1">Elaborar un programa que simule una lista de compras</textarea>
+							    </div>
+							    <div class="Dificultad1">
+							      <label for="comment1">Dificultad:</label>
+							      <textarea class="form-control" rows="2" id="dif1">Easy</textarea>
+							    </div>
+							    <div class="orden1">
+								    <label for="comment1">Ejercicio:</label>
+								    <textarea class="form-control" rows="5" id="comment1">Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programadebe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguidoloco)</textarea>
+								 </div>
+								 <button class="btn-success" id="g1">Guardar</button>
+							  	</form>
+							</div>
+
+							<div id="esconde1" class="widget-right">
+								<p><b>Crear una lista de compras</b></p>
+		     				 	<p><b>Ejercicio 1</b></p>
+		     				 	<p>
+		     				 	Crear un programa que mantenga el rastro de los productos de una lista de compras. El Programa debe estar preguntando  por   nuevos   productos hasta que nada es ingresado (nada en el input, seguido </p><button id="editar1">editar</button>
+		     				</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- <div class="primerD">
 			<div class="col-lg-8 ej1">
 				<div class="panel panel-orange panel-widget ">
 						<div class="row no-padding">
@@ -226,7 +313,7 @@
 			<div class="col-lg-2 ver">
 				<button id="p5" class="btn btn-info btn-block">Editar</button>
 			</div><br>
-		</div>
+		</div> -->
 		
 	</div>	<!--/.main-->
 
@@ -235,26 +322,7 @@
 	<script src="js/chart.min.js"></script>
 	<script src="js/chart-data.js"></script>
 	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
-	<script>
-		$('#calendar').datepicker({
-		});
-
-		!function ($) {
-		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-		        $(this).find('em:first').toggleClass("glyphicon-minus");      
-		    }); 
-		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-		}(window.jQuery);
-
-		$(window).on('resize', function () {
-		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-		})
-		$(window).on('resize', function () {
-		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-		})
-	</script>	
 	<script type="text/javascript" src="js/navscript.js"></script>
 </body>
 
