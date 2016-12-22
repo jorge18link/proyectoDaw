@@ -37,17 +37,17 @@ $(document).ready(function(){
       	$('#D6').removeClass("collapse");
       	$('#D6').addClass("collapse in")
 	}); 
-	$('body').on('click','#WD1', function(){
+	$('body').on('click','#WD7', function(){
       	$('.recu').removeClass("collapse in");
       	$('.recu').addClass("collapse")
-      	$('#D1').removeClass("collapse");
-      	$('#D1').addClass("collapse in")
+      	$('#D7').removeClass("collapse");
+      	$('#D7').addClass("collapse in")
 	}); 
-	$('body').on('click','#WD1', function(){
+	$('body').on('click','#WD8', function(){
       	$('.recu').removeClass("collapse in");
       	$('.recu').addClass("collapse")
-      	$('#D1').removeClass("collapse");
-      	$('#D1').addClass("collapse in")
+      	$('#D8').removeClass("collapse");
+      	$('#D8').addClass("collapse in")
 	});  
  
 });		
