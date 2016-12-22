@@ -576,7 +576,7 @@ var ui = {};
         return result;
     };
 
-    ui.getVerdictAndCssClass = function (options, score) {
+    /*ui.getVerdictAndCssClass = function (options, score) {
         var cssClass, verdictText, level;
 
         if (score <= 0) {
@@ -606,9 +606,9 @@ var ui = {};
         }
 
         return [verdictText, cssClass, level];
-    };
+    };*/
 
-    ui.updateUI = function (options, $el, score) {
+    /*ui.updateUI = function (options, $el, score) {
         var cssClass, barPercentage, verdictText;
 
         cssClass = ui.getVerdictAndCssClass(options, score);
@@ -637,7 +637,7 @@ var ui = {};
                 ui.updateErrors(options, $el);
             }
         }
-    };
+    };*/
 }(jQuery, ui));
 
 // Source: src/methods.js
@@ -669,10 +669,10 @@ var methods = {};
         } else {
             score = rulesEngine.executeRules(options, word);
         }
-        ui.updateUI(options, $el, score);
+        /*ui.updateUI(options, $el, score);
         verdictText = ui.getVerdictAndCssClass(options, score);
         verdictLevel = verdictText[2];
-        verdictText = verdictText[0];
+        verdictText = verdictText[0];*/
 
         if (options.common.debug) { console.log(score + ' - ' + verdictText); }
 
@@ -799,7 +799,14 @@ function main() {
         Show Menu on Book*/
         $(window).bind('scroll', function() {
             var navHeight = $(window).height() - 100;
-            if ($(window).scrollTop() > navHeight) {
+            var navHeight2 = -10; 
+            if ($(window).scrollTop() > navHeight && window.location == 'index.html') {
+                $('.navbar-default').addClass('on');
+            } else {
+                $('.navbar-default').removeClass('on');
+            }
+
+            if ($(window).scrollTop() > navHeight2 && window.location != 'index.html') {
                 $('.navbar-default').addClass('on');
             } else {
                 $('.navbar-default').removeClass('on');

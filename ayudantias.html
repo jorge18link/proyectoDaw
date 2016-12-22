@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fundamentos de Programación</title>
     <meta name="description" content="Stio Web del curso de Fundamentos de Programación">
     <meta name="keywords" content="Fundamentos de Programación, Python">
     <meta name="author" content="Fernando, Jorge, Karen, Israel">
-    
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -18,7 +17,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap
+    ================================================== -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
@@ -31,12 +31,11 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css"  href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
+    <!-- Embedded Stylesheet
+    ================================================== -->
     <style type="text/css">
       #todo{
         margin-top: 15px;
@@ -88,17 +87,13 @@
       	height: 60vh;
         margin:0px;
         padding: 0px;
-        
       }
-      
-     
-      
     </style>
   </head>
   <body>
-    <!-- Navigation
-    ====================#f4c263======================-->
-    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+    <!-- Navigation #f4c263
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top on">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -109,7 +104,6 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -117,51 +111,40 @@
             <li><a href="curso.html" class="page-scroll">Curso</a></li>
             <li><a href="equipo.html" class="page-scroll">Equipo</a></li>
             <li><a href="semana.html" class="page-scroll">Semana a Semana</a></li>
-            <li><a href="#tf-home" class="page-scroll">Ayudantías</a></li>
+            <li><a href="#tf-ayudantias" class="page-scroll">Ayudantías</a></li>
             <li><a href="login-sandbox.html" class="page-scroll">Sandbox</a></li>
             <li><a href="login-proyectos.html" class="page-scroll">Proyectos</a></li>
             <li><a href="login.html" class="page-scroll">Iniciar Sesión</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
 
-    <!-- Home Page
+    <!-- Sección Ayudantías
     ==========================================-->
-    <div id="tf-home" class="text-center">
-        <div class="overlay">
-            <div class="content">
-                <h1>Asiste a las <strong><span class="color">Ayudantías</span></strong></h1>
-                <p class="lead">En esta sección encontrara <b>información </b>acerca de las ayudantias existentes.</p><p>Da click en el botón para bajar</p>
-                <a href="#tf-ayudantias" class="fa fa-angle-down page-scroll"></a>
-            </div>
-        </div>
-    </div>
-
-    <!--=================Ayudantias=========================-->
     <div id="tf-ayudantias">
       <div class="container">
         <div id="todo" class="row">
         </div>
       </div>  
     </div>
-    <!--=================/Ayudantias=========================-->
 
-
-    <!--=================Modal mapa=========================-->
+    <!-- Modal Map
+    ==========================================-->
     <div class="modal fade" id="modal-mapa"  tabindex="-1" role="dialog" aria-labelledby="mapa-modal" aria-hidden="true" style="display: none;">
 	    <div class="modal-dialog">
-	      	<div class="modal-content">
-		        <div class="modal-header">
-		            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-		            <h4 class="modal-title" id="mapa-modal">Mapa:</h4>
-		        </div>
-		        <div id="map" class="modal-body"></div>
+	      <div class="modal-content">
+	        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="mapa-modal">Mapa:</h4>
+	        </div>
+	        <div id="map" class="modal-body"></div>
 	    	</div>
 	    </div>
     </div>
-    <!--=================/Modal mapa=========================-->
 
+    <!-- Footer Section
+    ==========================================-->
     <nav id="footer">
         <div class="container">
             <div class="pull-left fnav">
@@ -178,28 +161,23 @@
         </div>
     </nav>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- Include all compiled plugins (below), or include individual files as needed
+    ================================================== -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
-
     <script src="js/owl.carousel.js"></script>
-
 
     <!-- Javascripts
     ================================================== -->
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2xSvzCysAkkWiJZZHaHVMkG9A-UKFrU&callback=initMap">
-    </script>
-    
-    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE2xSvzCysAkkWiJZZHaHVMkG9A-UKFrU&callback=initMap"></script>
     <script type="text/javascript" src="js/ayudantias.js"></script>
-
-
   </body>
 </html>
