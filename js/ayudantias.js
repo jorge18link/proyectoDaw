@@ -47,7 +47,7 @@ function agregarAyudantes() {
 						$("<p>").append($("<strong>").text("Correo: "),""+ayuAct.correo)
 					),
 					$("<div>",{"class":"ayu-horarios col-md-12","id":""+ayuAct.matricula}).append(
-						$("<h3>").text("Ayudantias:")
+						$("<h3>").text("Horarios disponibles:")
 					)		
 				)
 	   		)
@@ -57,7 +57,7 @@ function agregarAyudantes() {
 	   					$("<p>").append($("<strong>").text("Día: "),""+hor_act.dia),
 		   				$("<p>").append($("<strong>").text("Aula: "),""+hor_act.aula),
 		   				$("<p>").append($("<strong>").text("Horario: "),""+hor_act.hora),
-		   				$("<p>").append($("<strong>").text("Ubicacion en el mapa: "),$("<button>",{"id":""+hor_act.id,"class":"btn"}).text("ver")),
+		   				$("<p>").append($("<strong>").text("Ubicacion: "),$("<a>",{"id":""+hor_act.id,"class":"lin"}).text("Ver en mapa")),
                         $("<hr>")
 	   				)
 	   			)
