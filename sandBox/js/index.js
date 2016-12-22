@@ -30,7 +30,6 @@ function cargarDatos(){
 					)
         		)
         	);
-
         	$("."+id).click(function(){
 		 		$("#pa-ejercicio").show();
 		 		ocultarTodo();
@@ -56,4 +55,8 @@ $(document).ready(function(){
  		$("#alert-exito").show();
  		$("#pa-ejercicio").hide();
  	});
+
+    $(".fracaso").click(function(){
+        $("#pa-ejercicio").hide();
+    });
 });
