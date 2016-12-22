@@ -18,7 +18,7 @@
 <![endif]-->
 <style type="text/css">
 	.sb-ejer{
-		background-color: rgba(0,0,0,0.6);
+		background-color: rgba(0,0,0,0.3);
 	}
 	.sb-ejer h3{
 		color:orange;
@@ -28,10 +28,8 @@
 		padding-top: 20px;
 		padding-right: 10px;
 		padding-left: 10px;
-		background-image: url("../img/coding.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-
+		overflow-y:scroll;
+		height: 56vh;
 	}
 	.ejercicios{
 		background-color: rgba(255,255,255,0.8);
@@ -41,6 +39,14 @@
 	.ejercicios p{
 		color: black;
 		font-size: large;
+	}
+
+	#body-pan{
+		background-color: #9BD0F5;
+	}
+	#pane-techo{
+		background-color: #5094C4;
+		color: white;
 	}
 </style>
 </head>
@@ -55,14 +61,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="../index.html"><span>Home </span>Page</a>
+				<a class="navbar-brand" href="index.html"><span>SandBox </span>Estudiantes</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
-							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
-							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+							<li><a href="../index.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -90,51 +94,9 @@
 			</ol>
 		</div><!--/.row-->
 		
-		<div class="row">
-			<div class="col-lg-12">
-				<h2>Nivel</h2>
-			</div>
-		</div><!--/.row-->
-
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Rookie</h4>
-						<div class="easypiechart" id="easypiechart-blue" data-percent="90" ><span class="percent">90%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Sargento</h4>
-						<div class="easypiechart" id="easypiechart-orange" data-percent="0" ><span class="percent">0%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Wizard<h4>
-						<div class="easypiechart" id="easypiechart-teal" data-percent="0" ><span class="percent">0%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>WarLord</h4>
-						<div class="easypiechart" id="easypiechart-red" data-percent="0" ><span class="percent">0%</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		<h3>Ejercicios para pasar al siguiente nivel</h3>
+		
+		<br>
+		
 		<div class="row">
 			<div class="col-xs-12 col-md-6 col-lg-3">
 				<div class="panel panel-blue panel-widget ">
@@ -143,7 +105,10 @@
 							<svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">9/10</div>
+							<div class="large">
+								9/10
+								to Sargento
+							</div>
 							
 						</div>
 					</div>
@@ -156,7 +121,10 @@
 							<svg class="glyph stroked empty-message"><use xlink:href="#stroked-empty-message"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">0/20</div>
+							<div class="large">
+								0/20
+								to Wizard
+							</div>
 						</div>
 					</div>
 				</div>
@@ -168,7 +136,10 @@
 							<svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>
 						</div>
 						<div class="col-sm-9 col-lg-7 widget-right">
-							<div class="large">0/30</div>
+							<div class="large">
+								0/30
+								to WarLord
+							</div>
 						</div>
 					</div>
 				</div>
@@ -182,39 +153,42 @@
 			<div class="col-lg-12">
 				<!--============Aqui Trabajo================-->
 				<div class="panel panel-default">
-					<div class="panel-heading"><h2>Ejercicios Disponibles</h2></div>
+					<div id="pane-techo" class="panel-heading col-md-12">Ejercicios Disponibles</div>
 					
-					<div class="panel-body">
-						<div class="ejercicios">
-							<div class="sb-desc thumbnail col-md-12 col-sm-12">
-			        			<div class="ejercicios thumbnail">
-			        				<p><strong>Titulo: </strong>Variables y tipos de datos</p>
-			        				<p><strong>Descripcion: </strong>Se aprendera a declarar variables y conocer los tipos de datos posibles en python</p>
-			        				<p><strong>Dificultad: </strong>Easy <a href="#pa-ejercicio"><button id="varia" type="button" class="btn btn-primary">Realizar</button></a></p>
-			        				
-			        			</div>
-			        			<div class="ejercicios thumbnail">
-			        				<p><strong>Titulo: </strong>Estructuras de control</p>
-			        				<p><strong>Descripcion: </strong> Se aprendera a usar las estructuras de control para validar condiciones.</p>
-			        				<p><strong>Dificultad: </strong>Medium <a href="#pa-ejercicio"><button id="estruc-ctrl" type="button" class="btn btn-primary">Realizar</button></a> </p>
-
-			        			</div>
-			        			<div class="ejercicios thumbnail">
-			        				<p><strong>Titulo: </strong> Estructuras de repetición</p>
-			        				<p><strong>Descripcion:</strong> Se aprendera a usar estructuras de repetición que se usan para recorrer listas o repetir ciertas acciones un determinado numero de veces o hasta que se cumpla una condición.</p>
-			        				<p><strong>Dificultad:</strong> Medium <a href="#pa-ejercicio"><button id="estruc-rept" type="button" class="btn btn-primary">Realizar</button></a></p>
-
-			        			</div>
-			        		</div>
-						</div>
+					<div id="body-pan" class="panel-body">
+						<div class="sb-desc col-md-12 col-sm-12" >
+		        			<!--
+		        			<div class="ejercicios thumbnail">
+		        				<p><strong>Titulo: </strong>Variables y tipos de datos</p>
+		        				<p><strong>Descripcion: </strong>Se aprendera a declarar variables y conocer los tipos de datos posibles en python</p>
+		        				<p><strong>Dificultad: </strong>Easy </p>
+		        				<a href="#pa-ejercicio"><button id="varia" type="button" class="btn btn-primary">Realizar</button></a>
+		        			</div>
+		        			<div class="ejercicios thumbnail">
+		        				<p><strong>Titulo: </strong>Estructuras de control</p>
+		        				<p><strong>Descripcion: </strong> Se aprendera a usar las estructuras de control para validar condiciones.</p>
+		        				<p><strong>Dificultad: </strong>Medium  </p>
+		        				<a href="#pa-ejercicio"><button id="estruc-ctrl" type="button" class="btn btn-primary">Realizar</button></a>
+		        			</div>
+		        			<div class="ejercicios thumbnail">
+		        				<p><strong>Titulo: </strong> Estructuras de repetición</p>
+		        				<p><strong>Descripcion:</strong> Se aprendera a usar estructuras de repetición que se usan para recorrer listas o repetir ciertas acciones un determinado numero de veces o hasta que se cumpla una condición.</p>
+		        				<p><strong>Dificultad:</strong> Medium </p>
+		        				<a href="#pa-ejercicio"><button id="estruc-rept" type="button" class="btn btn-primary">Realizar</button></a>
+		        			</div>
+		        			-->
+		        		</div>
 					</div>
 				</div>
 				<!--============/Aqui Trabajo================-->
 
 				<!--============Aqui tambien Trabajo================-->
+				<div id="alert-exito" class="alert alert-success">
+    				<strong>Ejercicio enviado con éxito!</strong>
+  				</div>
 				<div id="pa-ejercicio" class="panel panel-blue">
-					<div class="panel-heading dark-overlay"><svg class="glyph stroked clipboard-with-paper"><use xlink:href="#stroked-clipboard-with-paper"></use></svg>Ejercicio:</div>
-					<div class="panel-body">
+					<div id="pane-techo" class="panel-heading dark-overlay"><svg class="glyph stroked clipboard-with-paper"><use xlink:href="#stroked-clipboard-with-paper"></use></svg>Ejercicio:</div>
+					<div id="body-pan" class="panel-body">
 						<div class="sb-ejer thumbnail col-md-12 col-sm-12">
 		        			<div id="vari-tipos">
 		        				<h3>Variables y tipos de Datos</h3>
@@ -234,7 +208,8 @@
 		        				<p>Declara una variable llamada año_nacimiento y otra llamada año_actual en donde almacenaras los años respectivos, luego declara una variable llamada edad en donde calcularas la edad con las dos variables previas, luego si su edad es mayor igual a 18 mostrar un mensaje que diga usted es mayor de edad.</p>
 		        				<input type="file" name="attachments[0][uploaded_data]">
 		        				<br>
-		        				<button class="exito btn btn-success">Enviar</button>
+		        				<button type="button" class="exito btn btn-primary">Enviar</button>
+		        				
 		        			</div>
 		        			<div id="est-ctrl">
 		        				<h3>Estructuras de Control</h3>
@@ -253,7 +228,7 @@
 		        				<p>Declara una variable llamada año_nacimiento y otra llamada año_actual en donde almacenaras los años respectivos, luego declara una variable llamada edad en donde calcularas la edad con las dos variables previas, luego si su edad es mayor igual a 18 mostrar un mensaje que diga usted es mayor de edad y si es menor que 18 mostrar un mensaje que diga usted es menor de edad</p>
 		        				<input type="file" name="attachments[0][uploaded_data]">
 		        				<br>
-		        				<button class="exito btn btn-success">Enviar</button>
+		        				<button type="button" class="exito btn btn-primary">Enviar</button>
 		        			</div>
 		        			<div id="est-rep">
 		        				<h3>Estructuras de Control iteradas</h3>
@@ -272,7 +247,7 @@
 		        				<p>Esta vez usted creara una lista de objetos con atributos por ejemplo nombre, apellido y usara sentencia while y for para mostrar por pantalla dichos datos</p>
 		        				<input type="file" name="attachments[0][uploaded_data]">
 		        				<br>
-		        				<button class="exito btn btn-success">Enviar</button>
+		        				<button type="button" class="exito btn btn-primary">Enviar</button>
 		        			</div>
 		        		</div>
 					</div>
@@ -287,29 +262,12 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
+	
 	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
+	
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<script>
-		$('#calendar').datepicker({
-		});
-
-		!function ($) {
-		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-		        $(this).find('em:first').toggleClass("glyphicon-minus");      
-		    }); 
-		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-		}(window.jQuery);
-
-		$(window).on('resize', function () {
-		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-		})
-		$(window).on('resize', function () {
-		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-		})
-	</script>
+	
 	
 </body>
 

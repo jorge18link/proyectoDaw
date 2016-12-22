@@ -48,14 +48,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="../index.html"><span>Home </span>Page</a>
+				<a class="navbar-brand" href="index.html"><span>SandBox </span>Estudiantes</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
-							<li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
-							<li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+							<li><a href="../index.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -79,7 +77,7 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Icons</li>
+				<li class="active">Deberes</li>
 			</ol>
 		</div><!--/.row-->
 		
@@ -88,9 +86,9 @@
 			 	<div class="panel-heading">Deberes</div>
 			  	<div class="panel-body">
 			    	<div class="list-group">
-						<a href="..\Material\materialfundamentos\talleres-ejercicios-deberes\Deber\deber01.pdf" class="list-group-item">Deber 1
+						<a href="..\Material\materialfundamentos\talleres-ejercicios-deberes\Deber\deber01.pdf" target="_blank" class="list-group-item">Deber 1
 						</a>
-						<a href="..\Material\materialfundamentos\talleres-ejercicios-deberes\Deber\Algoritmos Receta.pdf" class="list-group-item">Algoritmos Recetas</a>
+						<a href="..\Material\materialfundamentos\talleres-ejercicios-deberes\Deber\Algoritmos Receta.pdf" target="_blank" class="list-group-item">Algoritmos Recetas</a>
 						
 					</div>
 			  	</div>
@@ -103,28 +101,11 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
+	
 	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
+	
 	<script src="js/bootstrap-datepicker.js"></script>
-	<script>
-		$('#calendar').datepicker({
-		});
-
-		!function ($) {
-		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-		        $(this).find('em:first').toggleClass("glyphicon-minus");      
-		    }); 
-		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-		}(window.jQuery);
-
-		$(window).on('resize', function () {
-		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-		})
-		$(window).on('resize', function () {
-		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-		})
-	</script>	
+	
 </body>
 
 </html>
